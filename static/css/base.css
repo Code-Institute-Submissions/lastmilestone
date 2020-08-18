@@ -1,0 +1,106 @@
+/*  Navbar  */
+
+.navbar-expand-lg {
+	margin: 0px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 99;
+	padding-left: 60px;
+	padding-right: 60px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	background: #151515;
+
+}
+
+.logo-font, i{
+	color: whitesmoke;
+	font-size: 30px;
+	
+}
+.logo-font {
+	float: left;
+}
+
+.main-logo-link a {
+	display: inline-block;
+}
+
+.mobile-nav {
+	text-align: center;
+	
+}
+
+.collapse {
+	display: inline-block;
+	padding-top: 20px;
+}
+
+.collapse ul li {
+	display: inline-block;
+	list-style: none;
+	position: relative;
+}
+
+  
+#navbarSupportedContent ul li:last-child {
+	margin-right: 0;
+}
+
+#navbarSupportedContent ul li.active a {
+	color: #e4381C;
+}
+
+#navbarSupportedContent > ul > li.nav-item.active > a:after {
+	opacity: 1;
+}
+
+.nav-item .nav-link, #user-options p, .basket p{
+	color: #ffffff;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: 500;
+	line-height: 28px;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+	display: block;
+	font-family: "Oswald", sans-serif;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+ .nav-item :after,  #user-options p :after, .basket p  :after, .nav-item:focus{
+	position: absolute;
+	left: 0;
+	bottom: -5px;
+	width: 100%;
+	padding-right: 50px;
+	height: 2px;
+	background: #e4381C;
+	content: "";
+	opacity: 0;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+#navbarSupportedContent ul li:hover .dropdown {
+	opacity: 1;
+	visibility: visible;
+	top: 40px;
+}
+
+#navbarSupportedContent ul li:hover>a {
+	color: #e4381C;
+}
+
+#navbarSupportedContent ul li:hover>a:after {
+	opacity: 1;
+}
