@@ -1,3 +1,117 @@
+/* Body */
+html,
+body {
+	height: 100%;
+	font-family: "Nunito Sans", sans-serif;
+	-webkit-font-smoothing: antialiased;
+ 	background-color: black;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	color: #ffffff;
+	font-weight: 400;
+	font-family: "Oswald", sans-serif;
+}
+
+h1 {
+	font-size: 70px;
+}
+
+h2 {
+	font-size: 36px;
+}
+
+h3 {
+	font-size: 30px;
+}
+
+h4 {
+	font-size: 24px;
+}
+
+h5 {
+	font-size: 18px;
+}
+
+h6 {
+	font-size: 16px;
+}
+
+p {
+	font-size: 16px;
+	font-family: "Nunito Sans", sans-serif;
+	color: #8f8fa8;
+	font-weight: 400;
+	line-height: 24px;
+	margin: 0 0 15px 0;
+}
+
+img {
+	max-width: 100%;
+}
+
+input:focus,
+select:focus,
+button:focus,
+textarea:focus {
+	outline: none;
+}
+
+a:hover,
+a:focus {
+	text-decoration: none;
+	outline: none;
+	color: #fff;
+}
+
+ul,
+ol {
+	padding: 0;
+	margin: 0;
+}
+
+/* buttons */
+
+.btn, .btn-primary {
+	display: inline-block;
+	font-size: 14px;
+	font-family: "Oswald", sans-serif;
+	font-weight: 600;
+	padding: 0 12px;
+    color:white;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-align: center;
+	width: auto;
+	height: 46px;
+	border-left: 2px solid #e16521;
+	border-right: 2px solid #e4381C;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	background-position: 0 0, 0 100%;
+	background-repeat: no-repeat;
+	background-size: 100% 2px;
+	background-image: -webkit-gradient(linear, left top, right top, color-stop(100%, #e4381C), to(#e16521)), -webkit-gradient(linear, left top, right top, from(#e4381C), color-stop(0%, #e16521));
+	background-image: -o-linear-gradient(left, #e4381C 100%, #e16521 100%), -o-linear-gradient(left, #e4381C 0%, #e16521 0%);
+	background-image: linear-gradient(to right, #e4381C 100%, #e16521 100%), linear-gradient(to right, #e4381C 0%, #e16521 0%);
+	-webkit-transition-duration: 1000ms;
+	-o-transition-duration: 1000ms;
+	transition-duration: 1000ms;
+	line-height: 45px;
+	position: relative;
+	z-index: 1;
+	border-radius: 4px;
+}
+.btn:hover, .btn-primary {
+	background-color:#e4381C;
+	color: #ffffff;}
+
+
 /*  Navbar  */
 
 .navbar-expand-lg {
@@ -104,3 +218,9 @@
 #navbarSupportedContent ul li:hover>a:after {
 	opacity: 1;
 }
+
+/* Hr */
+
+hr{
+	background-color:#e16521;
+	margin: 20px;}
