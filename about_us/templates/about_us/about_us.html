@@ -1,0 +1,219 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'about_us/css/about_us.css' %}">
+{% endblock %}
+
+{% block page_header %}
+       
+{% endblock %}
+    
+{% block content %}
+    <!-- Breadcrumb Section Begin -->
+    <section class="about" >
+        <div class="container main-about col-12">
+            <div class="row" >
+                <div class="col-lg-12">
+                    <div class="text-center mt-5 pt-5 section-title mobile">
+                        <h2 class="white-h2 mt-5 pt-5 ">About Us</h2>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumb End -->
+
+    <!-- About_us Section Begin -->
+    <section class="About_us mb-5">
+        <div class="container">
+            
+                    <div class="row">
+                        <div class="col-xl-9 col-lg-10 m-auto" >
+                        <div class=" text-center mt-5">
+                            <h2 class="white-h2">Who we Are & What We Do</h2>
+                            <p>CrossFit is a cutting-edge functional fitness system that can help everyday men. There is
+                                a significant portion of the population here in North America, that actually want
+                                and need success to be hard!</p>
+                                <img  class="mt-3" src="../static/img/push.jpg" alt="boxing">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="about-us text-center">
+                            <h4 class="white-h4">ABOUT US</h4>
+                            <p>Having a baby can be a nerve wracking experience for new parents – not the nine
+                                months of pregnancy, I’m talking about after the infant is brought home from the
+                                hospital. It’s always the same thing, by the time they have their third child
+                                they have it all figured out, but with number one it’s a learning thing.</p>
+                            <p>Baby monitors help you hear your baby’s needs without you having to be in the
+                                room with the baby. Some baby monitors are portable, or “mobile” and are small
+                                enough that you can carry it in your pocket as you do your daily chores around
+                                the house. Depending on your price range it’s best to have a base unit that
+                                plugs into the wall. The receiving unit can be like your portable phone, you can
+                                carry it around with you, and plug it back into the base unit to be recharged.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about-quality ">       
+                           
+                            <h4 class="white-h4 text-center">OUR QUALITY</h4>
+                            <p>Donec enim ipsum porta justo integer at velna vitae auctor integer congue magna
+                                at risus auctor purus unt pretium ligula rutrum integer sapien ultrice ligula
+                                luctus undo magna risus </p>
+                            <ul>
+                                <li class="list"><i class="fa fa-check-circle-o"></i>Lorem ipsum dolor sitdoni amet,
+                                    consectetur dont adipis elite vivamus interdum.</li>
+                                <li class="list"><i class="fa fa-check-circle-o"></i>Integer pulvinar ante nulla, ac
+                                    fermentum ex congue id vestibulum ensectetur.</li>
+                                <li class="list"><i class="fa fa-check-circle-o"></i>Proin blandit nibh in quam semper
+                                    iaculis lorem ipsum dolor salama ender.</li>
+                                <li class="list"><i class="fa fa-check-circle-o"></i>Quis ipsum suspendisse ultrices gravida.
+                                    Risus commodo viverra maecenas accumsan lacus vel facilisis. </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       
+    </section>
+    <!-- Aboutus Section End -->
+
+    <!-- Carousel -->
+    <div id="myCarousel" class="carousel slide mx-auto col-sm-12" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner mb-3">
+            <div class="carousel-item active text-center">
+           
+                <div class="mt-3">
+                    <div class="rating mt-md-0">
+                        <i class="fa fa-star fa-sm"></i>
+                        <i class="fa fa-star fa-sm"></i>
+                        <i class="fa fa-star fa-sm"></i>
+                        <i class="fa fa-star fa-sm"></i>
+                        <i class="fa fa-star fa-sm"></i>
+                    </div>
+                    <h4 class="white-h4 ">The “Minimal-Repair Technique” is a revolutionary surgical procedure in the treatment
+                        for hernia. Initially intended for correcting inguinal hernia.</h4>
+                    <div class="author-name">
+                        <h5 class="white-h5 ">Arnold Schwarzenegger</h5>
+                        <span>Body builder</span>
+                    </div>
+                    <div class="author-pic">
+                        <img  class="rounded-circle mt-3" src="../static/img/arnold.jpg" alt="Arnold Schwarzenegger"></div>
+                </div>
+              </div>
+          <div class="carousel-item text-center">
+           
+            <div class="">
+                <div class="rating mt-3">
+                    <i class="fa fa-star fa-sm"></i>
+                    <i class="fa fa-star fa-sm"></i>
+                    <i class="fa fa-star fa-sm"></i>
+                    <i class="fa fa-star fa-sm"></i>
+                    <i class="fa fa-star fa-sm"></i>
+                </div>
+                <h4 class="white-h4">The “Minimal-Repair Technique” is a revolutionary surgical procedure in the treatment
+                    for hernia. Initially intended for correcting inguinal hernia.</h4>
+                <div class="author-name">
+                    <h5 class="white-h5">Jason Statham</h5>
+                    <span>Actor</span>
+                </div>
+                <div class="author-pic">
+                    <img  class="rounded-circle mt-3" src="../static/img/jason.jpg"alt="Jason Statham"></div>
+            </div>
+          </div>
+          <div class="carousel-item text-center">
+           
+            <div class="">
+                <div class="rating mt-3">
+                    <i class="fa fa-star fa-sm"></i>
+                    <i class="fa fa-star fa-sm"></i>
+                    <i class="fa fa-star fa-sm"></i>
+                    <i class="fa fa-star fa-sm"></i>
+                    <i class="fa fa-star fa-sm"></i>
+                </div>
+                <h4 class="white-h4">The “Minimal-Repair Technique” is a revolutionary surgical procedure in the treatment
+                    for hernia. Initially intended for correcting inguinal hernia.</h4>
+                <div class="author-name">
+                    <h5 class="white-h5">Jason Momoa</h5>
+                    <span>Actor</span>
+                </div>
+                <div class="author-pic">
+                    <img class="rounded-circle mt-3" src="../static/img/momoa.jpg" alt="Jason Momoa"></div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    <!-- Testimonial Section End -->
+
+    <!-- Trainer Section Begin -->
+    <section class="">
+        <div class="container col-12 mt-5">
+            <div class="row p-3 ">
+                <div class="col-lg-12 text-center">
+                    <div class="mb-3">
+                        <h2 class="white-h2">OUR Trainer</h2>
+                        <p>Our Crossfit experts can help you discover new training techniques.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-5 trainer-row">
+                <div class="col-lg-3 col-sm-6 ">
+                    <div class="trainer-item">
+                        
+                            <img class="pic-tr" src="../static/img/arnolds.jpg" alt="">
+                            <h5 class="trainer ">Arnold Schwarzenegger <span>- Trainer</span></h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 mt-2">
+                    <div class="trainer-item p-0">
+                        
+                            <img class="pic-tr" src="../static/img/Dwaynejonhson.jpg" alt="">
+                            <h5 class="trainer">Dwayne Jonhson <span>- Trainer</span></h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 mt-2">
+                    <div class="trainer-item p-0">
+                        
+                            <img class="pic-tr" src="../static/img/Vindiesel.jpg" alt="">
+                            <h5 class="trainer">Vin Diesel <span>- Trainer</span></h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 mt-2">
+                    <div class="trainer-item p-0">
+                        
+                            <img class="pic-tr" src="../static/img/DaveBautista.jpg" alt="">
+                            <h5 class="trainer">Dave Bautista <span>- Trainer</span></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Carousel -->
+
+
+
+<!-- End of Carousel -->
+    <!-- Trainer Section End -->
+
+    
+{% endblock %}
+
+   
