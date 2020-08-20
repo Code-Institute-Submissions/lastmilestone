@@ -33,7 +33,13 @@
     {% endblock %}
 
     {% block extra_js %}
-    
+      <!--Email Script-->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function(){
+            emailjs.init("user_TJuSJ1DCV2RtGzT7VrKgN");
+            })();
+        </script>
     {% endblock %}
 
     <title>Robbie's Gym{% block extra_title %}{% endblock %}</title>
