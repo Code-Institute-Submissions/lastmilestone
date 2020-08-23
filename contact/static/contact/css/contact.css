@@ -201,7 +201,7 @@
 	height: 198px;
 	border-radius: 2px;
 	background: #2d2d2d;
-	border: none;
+	
 	padding-left: 20px;
 	padding-top: 15px;
 	font-size: 16px;
@@ -240,6 +240,7 @@
 	color: #ffffff;
 	font-weight: 600;
 }
+
 input:-webkit-autofill, input:focus:-webkit-autofill {
 	box-shadow: 0 0 0 100px #3d3c3c inset;
 	-webkit-box-shadow: 0 0 0 100px #3d3c3c inset;
@@ -248,5 +249,7 @@ input:-webkit-autofill, input:focus:-webkit-autofill {
 	font-weight: 600;
 
  }
+ @media (max-width: 650px){
+ .logo-font{font-size: 1rem;}}
 
 

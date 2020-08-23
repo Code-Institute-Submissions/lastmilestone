@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'home',
     'about_us',
     'contact',
+    'schedule',
 
 
     # Other

@@ -74,6 +74,7 @@
 
 
 @media (max-height: 824px) and (max-width: 600px) {
+    
     .carousel-item {
         margin-top:80px;
         }
@@ -93,7 +94,7 @@
 }
 
 @media  (max-width: 320px) {
-    .logo-font{font-size:1.5rem;}
+    .logo-font{font-size:1rem;}
      .white-h1, .white-h3{font-size: 1rem;
      margin-top: 20px;}
      .carousel-indicators{visibility: hidden;}
