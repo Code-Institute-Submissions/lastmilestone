@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
-    
     {% endblock %}
 
     {% block extra_css %}
@@ -28,18 +27,19 @@
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-        
-       
-    {% endblock %}
-
-    {% block extra_js %}
-      <!--Email Script-->
+        <!-- Stripe -->
+        <script src="https://js.stripe.com/v3/"></script>
+        <!--Email Script-->
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
         <script type="text/javascript">
             (function(){
             emailjs.init("user_TJuSJ1DCV2RtGzT7VrKgN");
             })();
         </script>
+    {% endblock %}
+
+    {% block extra_js %}
+    
     {% endblock %}
 
     <title>Robbie's Gym{% block extra_title %}{% endblock %}</title>
@@ -52,6 +52,23 @@
       
     </header>
 
+{% if messages %}
+        <div class="message-container">
+            {% for message in messages %}
+                {% with message.level as level %}
+                    {% if level == 40 %}
+                        {% include 'includes/toasts/toast_error.html' %}
+                    {% elif level == 30 %}
+                        {% include 'includes/toasts/toast_warning.html' %}
+                    {% elif level == 25 %}
+                        {% include 'includes/toasts/toast_success.html' %}
+                    {% else %}
+                        {% include 'includes/toasts/toast_info.html' %}
+                    {% endif %}
+                {% endwith %}
+            {% endfor %}
+        </div>
+    {% endif %}
 
     {% block page_header %}
     {% endblock %}
@@ -60,10 +77,34 @@
    
     {% endblock %}
     {% block footer %}
-   
+     <!-- Cta Section Begin -->
+     <section class="cta-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="cta-text">
+                        <h3>GeT Started Today</h3>
+                        <p>New student special! $30 unlimited Gym for the first week anh 50% of our member!</p>
+                    </div>
+                    <a href="#" class="px-2 cta-btn">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Cta Section End -->
+    <!-- FOOTER -->
+  <footer class="container footer">
+    <!--UP BUTTON-->
+    <div class="fixed-bottom">
+     <a type="action" href="#navbar" id="up" class="btn float-right m-2"><i class="fas fa-angle-up mt-1"></i></a>
+ </div>
+   <p>&copy; 2017-2020 Company, Inc. &middot; <a class="footer-link" href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+ </footer>
     {% endblock %}
     {% block postloadjs %}
-    
+    <script type="text/javascript">
+        $('.toast').toast('show');
+    </script>
     {% endblock %}
 
     

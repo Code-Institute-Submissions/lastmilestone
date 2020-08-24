@@ -10,5 +10,6 @@ urlpatterns = [
     path('about_us/', include('about_us.urls')),
     path('contact/', include('contact.urls')),
     path('schedule/', include('schedule.urls')),
+    path('profiles/', include('profiles.urls')),
     
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
