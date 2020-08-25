@@ -1,0 +1,132 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'plan/css/plan.css' %}">
+{% endblock %}
+
+{% block page_header %}
+
+{% endblock %}
+
+{% block content %}
+
+  <div class="section-header px-3 py-3 pt-md-5 pb-md-4 mx-auto mt-5 text-center">
+    <hr>
+    <h1 class="white-h1">Membership</h1>
+    <p class="lead">Starting out on your journey to fitness can be a daunting prospect but one that can change your life in the most positive way imaginable. A membership with 
+      <strong>Robbie's GYM</strong> will give you unrivalled choice and value to help you achieve your health and fitness goals, where you will enjoy unlimited access to each of its modern fitness clubs, extensive fitness class programmes. </p>
+  </div>
+<hr>
+  <div class="container col-12">
+    <div class="card-group mb-3 text-center">
+      <div class="card mb-4 ml-2 bg-dark text-white">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-normal">Annual Membership</h4>
+        </div>
+        <div class="card-body ">
+        <h1 class="card-title pricing-card-title">£253.00 <p class="text-muted">One Payment</p></h1>
+        <ul class="list-unstyled mt-3 mb-4 text-left">
+            
+          <li><i class="fa fa-check-circle-o fa-sm" aria-hidden="true"></i> Full multi-club access to Activ8 gym, swimming and fitness classes</li>  
+          <li><i class="fa fa-check-circle-o fa-sm" aria-hidden="true"></i> Free gym induction</li>
+          <li><i class="fa fa-check-circle-o fa-sm" aria-hidden="true"></i> Free training plan and ongoing updates</li>
+          <li><i class="fa fa-check-circle-o fa-sm" aria-hidden="true"></i> Discount on Arnold's Active activities and services</li>
+          <li><i class="fa fa-check-circle-o fa-sm" aria-hidden="true"></i> Privilege member only fitness classes</li>
+          <li><i class="fa fa-check-circle-o fa-sm" aria-hidden="true"></i> One one-off payment</li>  
+          <li><i class="fa fa-check-circle-o fa-sm" aria-hidden="true"></i> No joining fee applies</li>
+        </ul>
+          <button type="button" class="btn primary-btn">Contact us</button>  </div>
+      </div>
+      <div class="card mb-4 ml-2 bg-dark text-white">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-normal">12 Month Privilege</h4>
+        </div>
+        <div class="card-body">
+          <h1 class="card-title pricing-card-title">£22.99<p class="text-muted">Per Month</p></h1>
+          <ul class="list-unstyled mt-3 mb-4 text-left">
+            <li><i class="fa fa-check-circle-o fa-sm" aria-hidden="true"></i> 12 month committed period, paid monthly by direct debit</li>
+              <li><i class="fa fa-check-circle-o fa-sm" aria-hidden="true"></i> Full multi-club access to gym, swimming and fitness classes</li>
+              <li><i class="fa fa-check-circle-o fa-sm" aria-hidden="true"></i> Free gym induction</li>
+              <li><i class="fa fa-check-circle-o fa-sm" aria-hidden="true"></i> Free training plan and ongoing updates</li>
+              <li><i class="fa fa-check-circle-o fa-sm" aria-hidden="true"></i> Discount on Tees Active activities and services</li>
+              <li><i class="fa fa-check-circle-o fa-sm" aria-hidden="true"></i> Privilege member only fitness classes</li>
+           
+          </ul>
+          <button type="button" class="btn primary-btn">Contact us</button></div>
+      </div>
+      <div class="card mb-4 ml-2 bg-dark text-white">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-normal">Month to Month</h4>
+        </div>
+        <div class="card-body">
+          <h1 class="card-title pricing-card-title">£29 <p class="text-muted">Per Month</p></h1>
+          <ul class="list-unstyled mt-3 mb-4 text-left">
+            <li><i class="fa fa-check-circle-o fa-sm" aria-hidden="true"></i> Full multi-club access to Activ8 gym, swimming and fitness classes
+            <li><i class="fa fa-check-circle-o fa-sm" aria-hidden="true"></i> Free gym induction</li>
+            <li><i class="fa fa-check-circle-o fa-sm" aria-hidden="true"></i> 1 month committed period, paid by Direct Debit</li>
+          </ul>
+          <button type="button" class="btn primary-btn">Contact us</button>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+  <!-- Classes Section Begin -->
+  <section class="classes-section ">
+    <div class="class-title">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div>
+                        <h1 class="white-h1" >Our Classes</h1>
+                        <p>Our Crossfit experts can help you discover new training techniques and exercises
+                            <br />that offer a dynamic and efficient full-body workout.</p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container-fluid mb-5">
+        <div class="row text-center">
+            <div class="col-lg-3">
+                <div class="classes-item" id="classes-1">
+                    <h4 class="white-h2 pt-2">Crossfit</h4>
+                    <p>CrossFit can be used to accomplish any goal, from improved health to weight loss to better performance.
+                      </p>
+                    <button type="button" class="btn primary-btn">Contact us</button>
+                  </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="classes-item" id="classes-2">
+                    <h4 class="white-h2 pt-2">BootCamp</h4>
+                    <p>These group training sessions include high intensity exercises that 
+                      challenge every muscle in your body. </p>
+                    <button type="button" class="btn primary-btn">Contact us</button>
+                  </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="classes-item" id="classes-3" >
+                    <h4 class="white-h2 pt-2">Boxercise</h4>
+                    <p>If you’re serious about getting in shape and upping your fitness game,
+                       you must give Boxercise a try.</p>
+                    <button type="button" class="btn primary-btn">Contact us</button>
+                  </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="classes-item feature" id="classes-4">
+                    <h4 class="white-h2 pt-2">Move It</h4>
+                    <p>25-30 minute gym based workout session designed to target all areas
+                       of the body using high intensity training.</p>
+                    <button type="button" class="btn primary-btn">Contact us</button>
+                  </div>
+            </div>
+        </div>
+    </div>
+  
+</section>
+<!-- Classes Section End -->
+
+  
+{% endblock %}

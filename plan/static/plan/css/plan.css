@@ -1,0 +1,125 @@
+/*  Plan  */
+       
+
+.white-h1{
+    font-size: 58px;
+    font-weight: 500;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+    font-family: "Oswald", sans-serif;
+    font-family: "Nunito Sans", sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+.white-h2 ,.featurette-heading{
+    font-size: 36px;
+    font-weight: 500;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+    font-family: "Oswald", sans-serif;
+    font-family: "Nunito Sans", sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+.white-h3, .section-title {
+        font-size: 48px;
+        font-weight: 500;
+        color: #ffffff;
+        text-transform: uppercase;
+        margin-bottom: 14px;
+        font-family: "Oswald", sans-serif;
+        font-family: "Nunito Sans", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    
+}
+
+
+.about-text p.short-details {
+	font-size: 20px;
+	font-weight: 600;
+	color: #ffffff;
+	line-height: 28px;
+	margin-bottom: 20px;
+}
+
+.about-text p.long-details {
+	color: #ffffff;
+	margin-bottom: 40px;
+}
+
+.about-text .btn-primary.about-btn:after {
+	opacity: 1;
+}
+.classes-item {
+    height: 480px;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding-left: 60px;
+    padding-top: 162px;
+	padding-right: 35px;
+	
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+.classes-item:hover:before {
+    opacity: 1;
+   
+}
+.classes-item::before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    background: #e4381C;
+    content: "";
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.classes-item::after {
+    position: absolute;
+    left: 0;
+	bottom: 0;
+	z-index: 10;
+    width: 100%;
+    height: 5px;
+    background: #e4381C;
+    content: "";
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+#classes-1{
+    background-image: url("/static/img/class-1.jpg");}
+#classes-2{
+    background-image: url("/static/img/class-4.jpg");}
+#classes-3{
+    background-image: url("/static/img/class-3.jpg");}
+#classes-4{
+    background-image: url("/static/img/class-4.jpg");}
+    
+
+
+.fa-sm{color:#e16521;}
+
+
+
+@media (max-height: 820px)and (max-width: 600px) {
+    .white-h1{
+        margin-top:80px;
+        }
+    .white-h3{
+        font-size: 1.5rem;}
+        
+    .pricing-card-title{
+        font-size:2rem;}
+
+    .carousel-indicators{
+        visibility: hidden;}
+}

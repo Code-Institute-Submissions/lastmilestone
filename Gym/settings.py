@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'contact',
     'schedule',
     'profiles',
+    'plan',
 
 
     # Other
