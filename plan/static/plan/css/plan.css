@@ -7,19 +7,17 @@
     color: #ffffff;
     text-transform: uppercase;
     margin-bottom: 14px;
-    font-family: "Oswald", sans-serif;
-    font-family: "Nunito Sans", sans-serif;
+   
     -webkit-font-smoothing: antialiased;
 }
 
-.white-h2 ,.featurette-heading{
+.white-h2 {
     font-size: 36px;
     font-weight: 500;
     color: #ffffff;
     text-transform: uppercase;
     margin-bottom: 14px;
-    font-family: "Oswald", sans-serif;
-    font-family: "Nunito Sans", sans-serif;
+   
     -webkit-font-smoothing: antialiased;
 }
 
@@ -29,12 +27,12 @@
         color: #ffffff;
         text-transform: uppercase;
         margin-bottom: 14px;
-        font-family: "Oswald", sans-serif;
-        font-family: "Nunito Sans", sans-serif;
+      
     -webkit-font-smoothing: antialiased;
     
 }
 
+.card-header{height:56px;}
 
 .about-text p.short-details {
 	font-size: 20px;
@@ -122,4 +120,18 @@
 
     .carousel-indicators{
         visibility: hidden;}
+
+    .top-hr{margin-top: 40px;}
 }
+
+@media (max-width: 600px) {
+    .white-h1{
+        font-size: 1.5em;
+        margin-top:80px;}
+        }
+
+ @media (max-width: 798px) {
+    .white-h1{
+        font-size: 1.5em;
+        margin-top:80px;}
+        }       

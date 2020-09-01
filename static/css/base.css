@@ -1,3 +1,6 @@
+
+
+
 /* Body */
 html,
 body {
@@ -58,11 +61,41 @@ img {
 input:focus,
 select:focus,
 button:focus,
-textarea:focus {
+textarea:focus{
+
 	outline: none;
 }
+/* Form's input box colors */
 
-a:hover,
+.form-control{
+    width: 100%;
+    height: 46px;
+   
+    background: #2d2d2d;
+   
+    padding-left: 20px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    color: #a6a6a6;
+  
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    border: 1px solid #131313;
+}
+option{ 
+    background: #2d2d2d;
+    color: #a6a6a6;}
+
+select:focus,
+.form-control:focus {
+    color: #a6a6a6;
+    background: #2d2d2d;
+    border: 2px solid #e16521;
+    outline: 0;
+    
+}
+
+
 a:focus {
 	text-decoration: none;
 	outline: none;
@@ -253,3 +286,6 @@ label{color: #ffffff;}
 .toast-header, .toast-body{
 	background-color:#e4381C;
 	color: #ffffff;}
+
+@media  (max-width: 320px) {
+    .logo-font{font-size:1rem;}}

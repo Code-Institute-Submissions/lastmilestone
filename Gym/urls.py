@@ -12,5 +12,6 @@ urlpatterns = [
     path('schedule/', include('schedule.urls')),
     path('profiles/', include('profiles.urls')),
     path('plan/', include('plan.urls')),
+    path('products/', include('products.urls')), 
     
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

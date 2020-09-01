@@ -25,7 +25,7 @@
         <a class="nav-link" href="{% url 'plan' %}"  id="plans">Plans</a>
       </li>
       <li class="nav-item ">
-        <a class="nav-link" href="" id="product">Products</a>
+        <a class="nav-link" href="{% url 'products' %}" id="product">Products</a>
       </li>
       <li class="nav-item ">
         <a class="nav-link" href="{% url 'schedule' %}" id="schedule">Schedule</a>
@@ -47,7 +47,7 @@
                 <div class="dropdown-menu border-0 rounded-0" id="menu"  aria-labelledby="user-options">
                     {% if request.user.is_authenticated %}
                         {% if request.user.is_superuser %}
-                        <a href="" class="dropdown-item">Product Management</a>
+                        <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
                         {% endif %}
                         <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
                         <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
