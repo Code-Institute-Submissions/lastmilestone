@@ -20,7 +20,7 @@
 <hr>
   <div class="container col-12">
     <div class="card-group mb-3 text-center">
-      <div class="card mb-4 ml-2 bg-dark text-white">
+      <div class="card mb-4 ml-2 text-white" id="plan-1">
         <div class="card-header">
           <h4 class="my-0 font-weight-normal">Annual Membership</h4>
         </div>
@@ -37,10 +37,10 @@
           <li><i class="fa fa-check-circle-o fa-sm" aria-hidden="true"></i> No joining fee applies</li>
         </ul></div>
           <div class="card-footer">
-          <button type="button" class="btn primary-btn">Contact us</button>
+          <a class="btn primary-btn" href="{% url 'product_detail' product_id='175' %}">Buy now</a>
           </div>  
       </div>
-      <div class="card mb-4 ml-2 bg-dark text-white">
+      <div class="card mb-4 ml-2 text-white" id="plan-2">
         <div class="card-header">
           <h4 class="my-0 font-weight-normal">12 Month Privilege</h4>
         </div>
@@ -56,11 +56,12 @@
            
           </ul>
           </div>
-          <div class="card-footer">
-          <button type="button" class="btn primary-btn">Contact us</button>
-          </div>
+        <div class="card-footer">
+          <a class="btn primary-btn" href="{% url 'product_detail' product_id='176' %}">Buy now</a>
+          </div> 
       </div>
-      <div class="card mb-4 ml-2 bg-dark text-white">
+
+      <div class="card mb-4 ml-2 text-white" id="plan-3">
         <div class="card-header">
           <h4 class="my-0 font-weight-normal">Month to Month</h4>
         </div>
@@ -75,9 +76,9 @@
           </ul>
           
         </div>
-        <div class="card-footer">
-          <button type="button" class="btn primary-btn">Contact us</button>
-          </div>
+         <div class="card-footer">
+          <a class="btn primary-btn" href="{% url 'product_detail' product_id='177' %}">Buy now</a>
+          </div> 
       </div>
     </div>
     <hr>

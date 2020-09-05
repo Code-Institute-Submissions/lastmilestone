@@ -144,6 +144,10 @@ ol {
 	background-color:#e4381C;
 	color: #ffffff;}
 
+    
+/* Icons */
+
+.fa-sm{color:#e16521;}
 
 /*  Navbar  */
 
@@ -286,6 +290,6 @@ label{color: #ffffff;}
 .toast-header, .toast-body{
 	background-color:#e4381C;
 	color: #ffffff;}
-
+.bag-notification-wrapper{color:#ffffff;}
 @media  (max-width: 320px) {
     .logo-font{font-size:1rem;}}

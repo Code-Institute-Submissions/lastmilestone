@@ -14,8 +14,7 @@
   <div  class="col-auto collapse navbar-collapse my-auto py-1 py-lg-0  " id="navbarSupportedContent">
     <ul class="navbar-nav m-auto ">
       <li class="nav-item active">
-        <a class="nav-link
-        " href="{% url 'home' %}" id="home">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="{% url 'home' %}" id="home">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="{% url 'about_us' %}" id="about">About us</a>
@@ -35,7 +34,8 @@
       </li>
 
       </ul>
-       <div class="col-auto my-auto py-1 py-lg-0">
+
+      <div class="col-auto my-auto py-1 py-lg-0">
         <ul class="col-12 list-inline list-unstyled text-center text-lg-right my-0">
             <li class="list-inline-item dropdown ">
                 <a class="nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -57,7 +57,20 @@
                     {% endif %}
                 </div>
             </li>
-            
+            <li class="list-inline-item">
+                <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_basket'%}">
+                    <div class="text-center basket">
+                    
+                        <p class="my-0"><i class="fas fa-shopping-bag fa-sm"> </i>
+                            {% if grand_total %}
+                                ${{ grand_total|floatformat:2 }}
+                            {% else %}
+                                $0.00
+                            {% endif %}
+                        </p>
+                    </div>
+                </a>
+            </li>
         </ul>
     </div>
       </div>
