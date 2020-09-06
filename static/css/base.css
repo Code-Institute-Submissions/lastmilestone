@@ -80,15 +80,22 @@ textarea:focus{
   
     -o-transition: 0.3s;
     transition: 0.3s;
-    border: 1px solid #131313;
+    border:2px solid #e4381C;
+}
+
+select{ 
+    border: 2px solid #e4381C;}
+
+.border {
+    border: 2px solid #e4381C!important;
 }
 option{ 
     background: #2d2d2d;
-    color: #a6a6a6;}
+    color: #eee8e8;}
 
 select:focus,
 .form-control:focus {
-    color: #a6a6a6;
+    color: #eee8e8;
     background: #2d2d2d;
     border: 2px solid #e16521;
     outline: 0;
@@ -140,6 +147,7 @@ ol {
 	z-index: 1;
 	border-radius: 4px;
 }
+
 .btn:hover, .btn-primary {
 	background-color:#e4381C;
 	color: #ffffff;}
@@ -147,7 +155,8 @@ ol {
     
 /* Icons */
 
-.fa-sm{color:#e16521;}
+.fa-sm{
+    color:#e16521;}
 
 /*  Navbar  */
 
@@ -217,9 +226,6 @@ ol {
 	text-transform: uppercase;
 	font-weight: 500;
 	line-height: 28px;
-	-webkit-transition: 0.3s;
-	-o-transition: 0.3s;
-	transition: 0.3s;
 	display: block;
 	font-family: "Oswald", sans-serif;
 	-webkit-transition: all 0.3s;
@@ -256,7 +262,7 @@ ol {
 	opacity: 1;
 }
 
-/* Hr */
+/* Hr Horizontal line*/
 
 hr{
 	background-color:#e16521;
@@ -290,6 +296,12 @@ label{color: #ffffff;}
 .toast-header, .toast-body{
 	background-color:#e4381C;
 	color: #ffffff;}
+
 .bag-notification-wrapper{color:#ffffff;}
+
+body > div.message-container > div > div.toast-body > div:nth-child(4) > div > p{
+    color:#ffffff;}
+
 @media  (max-width: 320px) {
-    .logo-font{font-size:1rem;}}
+    .logo-font{
+        font-size:1.5rem;}}

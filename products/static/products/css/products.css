@@ -1,5 +1,7 @@
 
-.form-control{height:46px;color:white;}
+.form-control{
+    height:46px;
+    color:white;}
 
 @media (max-height: 820px)and (max-width: 600px) {
     .white-h1{
@@ -15,6 +17,7 @@
     .white-h1{
         font-size: 1em;
         margin-top:80px;}
+        
     .top-hr{margin-top: 50px;}
         }
 
