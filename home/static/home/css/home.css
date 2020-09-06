@@ -60,13 +60,14 @@
     -o-transition: all 0.3s;
     transition: all 0.3s;
 }
-
+/*  Carousel  */
 
 .carousel-caption{
     padding: auto;
-    margin-bottom: 50px;}
+    margin-bottom: 50px;
+    }
     
-/*  carousel-indicators  */
+
 
 .carousel-indicators .active{
 		background-color: #f00;
