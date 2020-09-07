@@ -43,16 +43,15 @@
     {% endblock %}
 
     <title>Robbie's Gym{% block extra_title %}{% endblock %}</title>
+
   </head>
+
   <body>
     <header>
-      
-        {% include 'includes/main-nav.html' %}
-
-      
+      {% include 'includes/main-nav.html' %}
     </header>
 
-{% if messages %}
+    {% if messages %}
         <div class="message-container">
             {% for message in messages %}
                 {% with message.level as level %}
@@ -74,33 +73,35 @@
     {% endblock %}
 
     {% block content %}
-   
     {% endblock %}
+
     {% block footer %}
-     <!-- Cta Section Begin -->
-     <section class="cta-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="cta-text">
-                        <h3>GeT Started Today</h3>
-                        <p>New student special! $30 unlimited Gym for the first week anh 50% of our member!</p>
-                    </div>
-                    <a href="#" class="px-2 cta-btn">Book Now</a>
-                </div>
-            </div>
+    
+     <!-- FOOTER -->
+  <div class="container col-12 footer mt-3">
+        
+            <div class="row ">
+                <div class="mt-3 col-sm-6 text-center">
+                        <h2 class=" p-3 ">Robbie's <strong class="red">Gym</strong></h2>
+                </div>   
+             <div class="mt-3 col-sm-6 ">
+                    <ul class="list-inline p-3 text-center ">
+						<li class="list-inline-item"><a title="Facebook" href="" rel="nofollow noopener" target="_blank" class=""><i class="fab fa-facebook-square"></i></a></li>
+						<li class="list-inline-item"><a title="Twitter" href="" rel="nofollow noopener" target="_blank" class="twitter"><i class="fab fa-twitter-square"></i></a></li>
+						<li class="list-inline-item"><a title="LinkedIn" href="" rel="noopener" target="_blank" class="pinterest"><i class="fab fa-linkedin"></i></a></li>
+						<li class="list-inline-item"><a title="Instagram" href="" rel="noopener" target="_blank" class="instagram"><i class="fab fa-instagram-square"></i></a></li>
+						<li class="list-inline-item"><a title="YouTube" href="" rel="noopener" target="_blank" class="youtube"><i class="fab fa-youtube-square"></i></a></li>
+					</ul>
         </div>
-    </section>
-    <!-- Cta Section End -->
-    <!-- FOOTER -->
-  <footer class="container footer">
-    <!--UP BUTTON-->
+       <p class="p-3 ">&copy; RobbieB &middot; <a class="footer-link" href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+            
+       </div>
+     <!--UP BUTTON-->
     <div class="fixed-bottom">
-     <a type="action" href="#navbar" id="up" class="btn float-right m-2"><i class="fas fa-angle-up mt-1"></i></a>
- </div>
-   <p>&copy; 2017-2020 Company, Inc. &middot; <a class="footer-link" href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
- </footer>
+        <a type="action" href="#navbar" id="up" class="btn float-right m-2"><i class="fas fa-angle-up mt-1"></i></a>
+    </div>
     {% endblock %}
+
     {% block postloadjs %}
     <script type="text/javascript">
         $('.toast').toast('show');

@@ -306,6 +306,18 @@ label{color: #ffffff;}
 body > div.message-container > div > div.toast-body > div:nth-child(4) > div > p{
     color:#ffffff;}
 
+/* Footer */
+
+.footer{ background-image: linear-gradient(to right, rgb(102, 39, 3) , #e4381C);
+} 
+
+
 @media  (max-width: 320px) {
     .logo-font{
-        font-size:1.5rem;}}
+        font-size:1.5rem;}
+    .footer{ background-image: linear-gradient( rgb(102, 39, 3) , #e4381C);
+} }
+
+@media  (max-width: 450px) {
+    .footer{ background-image: linear-gradient( rgb(102, 39, 3) , #e4381C);
+} }

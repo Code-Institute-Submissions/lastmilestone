@@ -73,7 +73,7 @@
       <div class="col-lg-4 card text-center" style="background-image: url('./static/img/feature-1.jpg');">
           <h2 class="white-h2">GROUP CLASSES</h2>
               <p class="mt-5 ">Exercising with others can be a great way of getting fit – as well as learning fresh skills and making new friends. </p>
-              <p><a class="btn mt-3 " href="{% url 'account_login' %}"role="button">View details</a></p>
+              <p><a class="btn" href="#group" role="button">View details</a></p>
       
     </div>
 
@@ -81,46 +81,60 @@
 
       <div class="col-lg-4 card center text-center" style="background-image: url('./static/img/feature-2.jpg');">  
          <h2 class="white-h2 ">PERSONAL TRAINING</h2>
-         <p class="mt-1">A personal trainer is dedicated to you and your goals, and will have a significant impact on your training routine.<p>
-           <a class="btn mt-3 " href="#" role="button">View details</a></p>
+         <p class="mt-5">A personal trainer is dedicated to you and your goals, and will have a significant impact on your training routine.<p>
+           <a class="btn" href="#pt" role="button">View details</a></p>
       </div>
       <!-- /.col-lg-4 -->
 
       <div class="col-lg-4 card center text-center" style="background-image: url('./static/img/feature-3.jpg');"> 
         <h2 class="white-h2">Sports Nutrition</h2>
         <p class="mt-5">We should all aim to eat a healthy diet based on the principles of the Eatwell Guide, and this is also the case when you are active.<p>
-          <a class="btn  " href="#" role="button">View details</a></p>
+          <a class="btn" href="#sp" role="button">View details</a></p>
       </div><!-- /.col-lg-4 -->
     </div>
     <!-- /.row -->
 
 
 
-    <!-- START THE FEATURETTE -->
+    <!-- FEATURETTE -->
+
     <hr class="mt-5">
 
     <div class="row  p-3 mt-5">
-      <div class="col-md-5">
+      <div class="col-md-5" id="group">
         <img src="./static/img/small-3.jpg" class="bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto" width="500" height="500"  preserveAspectRatio="xMidYMid slice" focusable="false" role="img" >
         <rect width="100%" height="100%" fill="#eee"/>
       </div>
-      <div class="col-md-7">
-        <h2>First featurette heading. <span class="red">It’ll blow your mind.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+
+    <div class="col-md-7">
+        <h2 >GROUP <span class="red">CLASSES</span></h2>
+        <p class="lead mt-3">If you’ve ever stepped foot into a cycle studio, tried out a Zumba dance class at your local gym, 
+            or joined in on a quick yoga session, you have been a part of a group exercise class. </p>
+        <p class="lead"><br>So, what is group exercise exactly?<br> </p>
+        <p class="lead">‘Group exercise’ simply means that a workout is led by an instructor or trainer in a group setting. 
+        <br>You can find a group exercise class to fit any and all of your fitness needs.
+            Whether you are looking for group exercises for seniors (like our BOXERCIZE classes)
+            or are brand new to the gym—group exercise is a smart way to get healthy with your peers.</p>
       </div>
-      
-    </div>
+      </div>
 
     <hr>
 
     <div class="row p-3">
-      <div class="col-md-7">
-        <h2 class="./static/img/small-3.jpg">Oh yeah, it’s that good. <span class="red">See for yourself.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-      </div>
-      <div class="col-md-5">
+    <div id="pt" class="col-md-7">
+        <h2 >PERSONAL <span class="red">TRAINERS</span></h2>
+        <p class="lead mt-3">Do you want to get fit or lose weight fast?</p>
+        <p class="lead">The answer is not some miracle supplement and there are no mysterious secrets, it’s simple … work out with a Personal Trainer. 
+            Everybody’s doing it. You should be doing it too.</p>
+        <p class="lead"> Why should just the rich people get the best? We all deserve to look after ourselves.Personal Trainers offer a variety of services and motivation that go far beyond a general exercise program.
+
+        <p class="lead">What can Personal Training do for me?</p>
+        <p class="lead">It’s simple... a <strong class="text-white">Robbie’s </strong><strong class="red">GYM</strong> Personal Trainer will provide a personalised health and fitness programme 
+            to suit your lifestyle and your goals.
+            A Personal Trainer may be just what you need to turn your good intentions into reality. Through consultation, our Personal Trainers help you identify your ultimate fitness goal and make reaching that goal fun.</p> </div>
+    <div class="col-md-5">
         <img src="./static/img/small-3.jpg" class="bd-placeholder-img bd-placeholder-img-lg  img-fluid mx-auto" width="500" height="500"  preserveAspectRatio="xMidYMid slice" focusable="false" role="img" ><rect width="100%" height="100%" fill="#eee"/>
-      </div>
+    </div>
     </div>
 
     <hr >
@@ -130,9 +144,15 @@
         <img src="./static/img/small-3.jpg" class="bd-placeholder-img bd-placeholder-img-lg  img-fluid mx-auto" width="500" height="500"  preserveAspectRatio="xMidYMid slice" focusable="false" role="img" ><rect width="100%" height="100%" fill="#eee"/>
       </div>
       <div class="col-md-7">
-        <h2 class="">And lastly, this one. <span class="red">Checkmate.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-      </div>
+        <h2 id="sp">SPORTS<span class="red"> NUTRITION</span></h2>
+        <p class="lead mt-3">Sports nutrition is the study and practice of nutrition and diet with regards to improving anyone's 
+        athletic performance.
+         Nutrition is an important part of many sports training regimens, 
+         being popular in strength sports (such as weightlifting and bodybuilding) and endurance sports 
+         (e.g. cycling, running, swimming, rowing).
+          <br>Sports nutrition focuses its studies on the type, as well as the quantity of fluids and food taken by an athlete. 
+          In addition, it deals with the consumption of nutrients such as vitamins, minerals,
+         supplements and organic substances that include carbohydrates, proteins and fats.</p> <a href="{% url 'products' %}">Go to products</a></div>
      
     </div>
   </div>
