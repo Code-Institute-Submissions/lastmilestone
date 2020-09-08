@@ -39,7 +39,14 @@
     {% endblock %}
 
     {% block extra_js %}
-    
+    <!-- Javascript to add active class -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+	// get current URL path and assign 'active' class
+	    var pathname = window.location.pathname;
+	$('.collapse ul li a[href="'+pathname+'"]').parent().addClass('active');
+    });
+    </script>
     {% endblock %}
 
     <title>Robbie's Gym{% block extra_title %}{% endblock %}</title>
@@ -106,6 +113,7 @@
     <script type="text/javascript">
         $('.toast').toast('show');
     </script>
+   
     {% endblock %}
 
     
