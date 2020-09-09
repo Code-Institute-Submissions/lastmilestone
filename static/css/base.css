@@ -1,5 +1,4 @@
-title{color: red;
-}
+
 
 
 /* Body */
@@ -121,6 +120,10 @@ ol {
 	margin: 0;
 }
 
+.icon{
+    color:#e5e763;
+    }
+
 /* buttons */
 
 .btn, .btn-primary {
@@ -163,6 +166,9 @@ ol {
 
 .fa-sm{
     color:#e16521;}
+.icon{
+    color:yellow;
+    }
 
 /*  Navbar  */
 

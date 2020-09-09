@@ -37,7 +37,7 @@
                     </p>
                     {% endif %}
                     {% if product.rating %}
-                        <p><i class="fas fa-star fa-sm mr-1 star"></i>{{ product.rating }} / 5</p>
+                        <p><i class="fas fa-star fa-sm mr-1 star icon"></i>{{ product.rating }} / 5</p>
                     {% else %}
                         <small class="text-muted">No Rating</small>
                     {% endif %}
@@ -95,7 +95,7 @@
                              <div class="col{% if s %}-12 mt-2{% endif %}">
                                 <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 mt-5">
                                     <span class="icon">
-                                        <i class="fas fa-chevron-left fa-sm"></i>
+                                        <i class="fas fa-chevron-left fa-sm text-white"></i>
                                     </span>
                                     <span class="text-uppercase">Keep Shopping</span>
                                 </a>
