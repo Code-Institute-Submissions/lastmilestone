@@ -1,0 +1,43 @@
+ <!-- Trainer Section Begin -->
+    <section class="">
+        <div class="container col-12 mt-5">
+            <div class="row ">
+                <div class="col-lg-12 text-center">
+                    <div class="mb-3">
+                        <h2 class="white-h2" id="trainers">OUR Trainer</h2>
+                        <p>Our Crossfit experts can help you discover new training techniques.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-5 trainer-row">          
+                <div class="card-deck">
+                 {% for trainer in trainer %}
+                    {% if trainer.image %}
+                    
+                        <div class="card trainer-item">
+                           <a href="{% url 'trainer_detail' trainer.id %}">
+                                    <img class="card-img-top " src="{{ trainer.image.url }}" alt="{{ trainer.name }}">
+                                </a>
+                                <div class="card-body text-center">
+                            <h5 class="trainer card-text py-md-2 py-3">{{ trainer.name }} <span>- Trainer</span></h5>
+                            </div></div>
+                        {% else %}
+                                <a href="{% url 'trainer_detail' trainer.id %}">
+                                    <img class="" src="{{ MEDIA_URL }}noimage.png" alt="{{ trainer.name }}">
+                                    <h5 class="trainer card-text">{{ trainer.name }} <span>- Trainer</span></h5>
+                                </a>
+                                {% endif %}
+                          {% endfor %} 
+                    </div>
+                </div>
+                
+               
+            </div>
+      </div>
+    </section>
+    <!--TRainer--------------------------------------------------->
+    
+                   
+      
+  <hr>
