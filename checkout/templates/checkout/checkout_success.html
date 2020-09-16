@@ -6,25 +6,19 @@
 {% endblock %}
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
-    </div>
+   <div class=" px-3 py-3 pt-md-5 pb-md-4 mx-auto mt-5 text-center">
+    <hr class="top-hr mt-5">
+    <h1 class="white-h1">Thank You</h1>
+         <p class="text-black">Your order information is below. A confirmation email will be sent to <strong>{{ order.email }}</strong>.</p>
+           
+    <hr>
+  </div>
 {% endblock %}
 
 {% block content %}
     <div class="overlay"></div>
     <div class="container">
-        <div class="row">  
-        <div class=" py-3 pt-md-5 pb-md-4  mt-5 text-center">
-                <hr class="top-hr mt-5">
-        <h1 class="white-h1">Thank You</h1>
-        <p class="text-black ">Your order information is below. A confirmation email will be sent to <strong>{{ order.email }}</strong>.</p>
-            
-            <hr>
-        </div>
-    </div>
+      
 
         <div class="row">
             <div class="col-12 col-lg-7">
@@ -162,7 +156,7 @@
                         </div>
                     </div>
 
-                 <div class="row">
+                    <div class="row">
                         <div class="col-12 col-md-4">
                             <p class="mb-0 text-black font-weight-bold">Order Total</p>
                         </div>
@@ -196,14 +190,14 @@
                 {% if from_profile %}
                     <a href="{% url 'profile' %}" class="btn btn-black rounded-0 my-2">
                         <span class="icon mr-2">
-                            <i class="fas fa-angle-left fa-sm text-white"></i>
+                            <i class="fas fa-angle-left"></i>
                         </span>
                         <span class="text-uppercase">Back to Profile</span>
                     </a>
                 {% else %}
                     <a href="{% url 'products' %}?category=new_arrivals,deals,clearance" class="btn btn-black rounded-0 my-2">
                         <span class="icon mr-2">
-                            <i class="fas fa-gifts fa-sm text-white"></i>
+                            <i class="fas fa-gifts fa-sm"></i>
                         </span>
                         <span class="text-uppercase">Now check out the latest deals!</span>
                     </a>

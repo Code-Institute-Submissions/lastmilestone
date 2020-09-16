@@ -6,6 +6,7 @@
 {% endblock %}
 
 {% block page_header %}
+<div class="overlay"></div>
   <div class=" px-3 py-3 pt-md-5 pb-md-4 mx-auto mt-5 text-center">
     <hr class="top-hr mt-5">
     <h1 class="white-h1">My profile</h1>
@@ -66,12 +67,13 @@
                     </table>
                 </div>
             </div>
-        </div>
+        </div></div>
 {% endblock %}
 
 
 
 {% block postloadjs %}
     {{ block.super }}
+    
     <script type="text/javascript" src="{% static 'profiles/js/countryfield.js' %}"></script>
 {% endblock %}

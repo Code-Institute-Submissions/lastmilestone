@@ -36,7 +36,7 @@
                         <p class="mb-1 mt-0 small text-muted">Subtotal</p>
                     </div>
                 </div>
-                {% for item in bag_items %}
+                {% for item in basket_items %}
                     <div class="row">
                         <div class="col-2 mb-1">
                             <a href="{% url 'product_detail' item.product.id %}">
@@ -76,12 +76,12 @@
                 <form action="{% url 'checkout' %}" method="POST" id="payment-form">
                     {% csrf_token %}
                     <fieldset class="rounded px-3 mb-5">
-                        <legend class="fieldset-label small text-white px-2 w-auto">Details</legend>
+                        <legend class="fieldset-label small text-black px-2 w-auto">Details</legend>
                         {{ order_form.full_name | as_crispy_field }}
                         {{ order_form.email | as_crispy_field }}
                     </fieldset>
                     <fieldset class="rounded px-3 mb-5">
-                        <legend class="fieldset-label small text-white px-2 w-auto">Delivery</legend>
+                        <legend class="fieldset-label small text-black px-2 w-auto">Delivery</legend>
                         {{ order_form.phone_number | as_crispy_field }}
                         {{ order_form.street_address1 | as_crispy_field }}
                         {{ order_form.street_address2 | as_crispy_field }}
@@ -102,7 +102,7 @@
 						</div>
                     </fieldset>
                     <fieldset class="px-3">
-                        <legend class="fieldset-label small text-white px-2 w-auto">Payment</legend>
+                        <legend class="fieldset-label small text-black px-2 w-auto">Payment</legend>
                         <!-- A Stripe card element will go here -->
                         <div class="mb-3" id="card-element"></div>
                         <!-- Used to display form errors -->
@@ -114,7 +114,7 @@
                     <div class="submit-button text-right mt-5 mb-2">                    
 						<a href="{% url 'view_basket' %}" class="btn btn-outline-black rounded-0">
 							<span class="icon">
-								<i class="fas fa-chevron-left fa-sm text-white"></i>
+								<i class="fas fa-chevron-left fa-sm"></i>
 							</span>
 							<span class="font-weight-bold">Adjust basket</span>
 						</a>
@@ -136,9 +136,9 @@
         </div>
     </div>
     <div id="loading-overlay">
-        <h1 class="text-light logo-font loading-spinner">
+        <h1 class="text-light loading-spinner">
             <span class="icon">
-                <i class="fas fa-3x fa-sync-alt fa-spin"></i>
+                <i class="fas fa-3x fa-cog  fa-spin"></i>
             </span>
         </h1>
     </div>

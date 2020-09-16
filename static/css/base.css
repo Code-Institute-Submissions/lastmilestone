@@ -67,9 +67,14 @@ input:focus,
 select:focus,
 button:focus,
 textarea:focus{
-
-	outline: none;
+ outline: none;
 }
+
+/* Just for the empty basket */
+.empty{
+    height:60vh;}
+
+
 /* Form's input box colors */
 
 .form-control{
@@ -89,7 +94,8 @@ textarea:focus{
 }
 
 select{ 
-    border: 2px solid #e4381C;}
+    border: 2px solid #e4381C;
+    }
 
 .border {
     border: 2px solid #e4381C!important;
@@ -120,9 +126,7 @@ ol {
 	margin: 0;
 }
 
-.icon{
-    color:#e5e763;
-    }
+
 
 /* buttons */
 
@@ -157,7 +161,7 @@ ol {
 	border-radius: 4px;
 }
 
-.btn:hover, .btn-primary {
+.btn:hover, .btn-primary{
 	background-color:#e4381C;
 	color: #ffffff;}
 
@@ -166,6 +170,8 @@ ol {
 
 .fa-sm{
     color:#e16521;}
+.fa-sm:hover{
+    color:#ffffff;}
 .icon{
     color:yellow;
     }
@@ -273,6 +279,16 @@ ol {
 #navbarSupportedContent ul li:hover>a:after {
 	opacity: 1;
 }
+/* Dropdow */
+.dropdown-menu,
+.dropdown-item{
+    color: #ffffff;
+    background-color:#e16521;}
+
+.dropdown-item:hover{
+    color: #e16521;
+    background-color:#ffffff;}
+
 
 /* Hr Horizontal line*/
 
@@ -298,7 +314,7 @@ label{color: #ffffff;}
     top: 72px;
     right: 15px;
 	z-index: 99999999999;
-	background-color:#e4381C;
+	background-color:#e16521;
 
 }
 
@@ -306,7 +322,7 @@ label{color: #ffffff;}
     height: 5px;
 }
 .toast-header, .toast-body{
-	background-color:#e4381C;
+	background-color:#e16521;
 	color: #ffffff;}
 
 .bag-notification-wrapper{color:#ffffff;}
@@ -316,7 +332,9 @@ body > div.message-container > div > div.toast-body > div:nth-child(4) > div > p
 
 /* Footer */
 
-.footer{ background-image: linear-gradient(to right, rgb(102, 39, 3) , #e4381C);
+.footer{
+ 
+    background-image: linear-gradient(to right, rgb(102, 39, 3) , #e4381C);
 } 
 
 

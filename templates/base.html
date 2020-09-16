@@ -53,6 +53,7 @@
         });
 
     </script>
+    
     {% endblock %}
 
     <title>Robbie's Gym{% block extra_title %}{% endblock %}</title>
@@ -64,7 +65,7 @@
       {% include 'includes/main-nav.html' %}
     </header>
 
-    {% if messages %}
+     {% if messages %}
         <div class="message-container">
             {% for message in messages %}
                 {% with message.level as level %}

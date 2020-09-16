@@ -3,23 +3,17 @@
 {% load basket_tools %}
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
-    </div>
+
 {% endblock %}
 
 {% block content %}
     <div class="overlay"></div>
     <div class="container mb-2">
-        <div class="row">
-            <div class="col">
-                <hr>
-                <h2 class="logo-font mb-4">Shopping basket</h2>
-                <hr>
-            </div>
-        </div>
+    <div class="section-header px-3 py-3 pt-md-5 pb-md-4 mx-auto mt-5 text-center">
+    <hr class="top-hr">
+    <h1 class="white-h1">Shopping basket</h1>
+  </div>
+  <hr>
 
         <div class="row">
             <div class="col">
@@ -33,7 +27,7 @@
                         <div class="row">
                             <div class="col">
                                 {% include "basket/checkout-buttons.html" %}
-                                <p class="text-muted mb-5">A summary of your basket contents is below</p>
+                                <p class="text-muted mb-5">A summary of your basket contents is below :</p>
                             </div>
                         </div>
                         {% for item in basket_items %}
@@ -52,7 +46,7 @@
                                     {% include "basket/quantity-form.html" %}
                                 </div>
                             </div>
-                            <div class="row"><div class="col"><hr></div></div>
+                            <div class="row"><div class="col"></div></div>
                         {% endfor %}
                         <div class="btt-button shadow-sm rounded-0 border border-black">
                             <a class="btt-link d-flex h-100">
@@ -104,15 +98,17 @@
                         </table>
                     </div>
                 {% else %}
-                <hr class="col-md-6 ml-0 px-3 text-center">
-                    <h3 class="white-h3 mb-3 p-0">Your basket is empty.</h3>
-                 <hr class="col-md-6 ml-0 px-3" >
-                    <a href="{% url 'products' %}" class="btn rounded-0 btn-lg">
+                <div class="empty">
+               
+                    <h3 class="white-h3 my-5 p-0">Your basket is empty.</h3>
+                       
+                    <a href="{% url 'products' %}" class="btn my-5">
                         <span class="icon">
                             <i class="fas fa-chevron-left fa-sm"></i>
                         </span>
-                        <span class="text-uppercase">Keep Shopping</span>
+                        <span class="text-uppercase ">Keep Shopping</span>
                     </a>
+                </div>
                 {% endif %}
             </div>
         </div>
