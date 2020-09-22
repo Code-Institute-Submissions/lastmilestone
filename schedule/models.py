@@ -1,14 +1,20 @@
 from django.db import models
+from datetime import datetime
+from django.contrib.auth.models import User
+from django.conf import settings
+from django_currentuser.db.models import CurrentUserField
+
 
 class Comment(models.Model):
-    
-    sku = models.CharField(max_length=254, null=True, blank=True)
+    created_by= CurrentUserField(User, on_update=True)
     name = models.CharField(max_length=254)
     comment = models.TextField()
-   
-   
-    image_url = models.URLField(max_length=1024, null=True, blank=True)
-    image = models.ImageField(null=True, blank=True)
+    date_created = models.DateTimeField(auto_now_add=True, editable=False, null=False, blank=False)
+    date_modified = models.DateTimeField(auto_now=True, editable=False, null=False, blank=False)
+class Meta:
+    abstract = True
 
     def __str__(self):
-        return self.name
+        
+        super(Comment, self).save()
+        return self.name, self.user.username

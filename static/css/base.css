@@ -314,15 +314,16 @@ label{color: #ffffff;}
     top: 72px;
     right: 15px;
 	z-index: 99999999999;
-	background-color:#e16521;
+	background-color:#000;
+    border:1px solid #ffffff;
 
 }
 
 .toast-capper {
-    height: 5px;
+    height: 10px;
 }
 .toast-header, .toast-body{
-	background-color:#e16521;
+	background-color:#000;
 	color: #ffffff;}
 
 .bag-notification-wrapper{color:#ffffff;}

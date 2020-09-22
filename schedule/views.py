@@ -7,8 +7,10 @@ from django.db.models.functions import Lower
 from .models import Comment
 from .forms import CommentForm
 
-# Create your views here.
-# Create your views here.
+from django.contrib.auth.models import Permission
+from django.contrib.auth.models import User
+
+
 
 
 
@@ -16,16 +18,14 @@ from .forms import CommentForm
 
 
 def schedule(request):
-    """ A view to show all comments, including sorting and search queries """
-
-    comments = Comment.objects.all()
-  
-
+    """ A view to show all comments """
+    if request.user:
     
-    context = {
-        'comments': comments,
+        comments = Comment.objects.all()
+        context = {
+            'comments': comments,
       
-    }
+        }
 
     return render(request, 'schedule/schedule.html', context)
 
@@ -44,16 +44,24 @@ def comment_detail(request, comment_id):
 
 @login_required
 def add_comment(request):
+    
     """ Add a comment to the store """
-    if not request.user.is_superuser:
-        messages.error(request, 'Sorry, only store owners can do that.')
+    if not request.user:
+        messages.error(request, 'Sorry, only logged in user can do that.')
         return redirect(reverse('all_comments'))
-
+    
     if request.method == 'POST':
+        
         form = CommentForm(request.POST, request.FILES)
+        
         if form.is_valid():
+            
             comment = form.save()
-            messages.success(request, 'Successfully added comment!')
+            comment.created_by=request.user
+          
+            
+
+            messages.success(request, 'Successfully added note!')
             return redirect(reverse('comment_detail', args=[comment.id]))
         else:
             messages.error(
@@ -72,22 +80,26 @@ def add_comment(request):
 
 @login_required
 def edit_comment(request, comment_id):
+    
+    
     """ Edit a comment in the store """
-    if not request.user.is_superuser:
-        messages.error(request, 'Sorry, only store owners can do that.')
-        return redirect(reverse('home'))
-
-    comment = get_object_or_404(Comment, pk=comment_id)
-    if request.method == 'POST':
+    if not request.user :
+        messages.error(request, 'Sorry, only logged in user can do that.')
+        return redirect(reverse('all_comments'))
+    
+    comment = get_object_or_404(Comment, pk=comment_id,)
+    
+    if request.method == 'POST' :
+        
         form = CommentForm(request.POST, request.FILES, instance=comment)
         if form.is_valid():
             form.save()
-            messages.success(request, 'Successfully updated comment!')
+            messages.success(request, 'Successfully updated note!')
             return redirect(reverse('comment_detail', args=[comment.id]))
         else:
             messages.error(
                 request, 'Failed to update comment.\
-                     Please ensure the form is valid.')
+                        Please ensure the form is valid.')
     else:
         form = CommentForm(instance=comment)
         messages.info(request, f'You are editing {comment.name}')
@@ -103,12 +115,13 @@ def edit_comment(request, comment_id):
 
 @login_required
 def delete_comment(request, comment_id):
+    
     """ Delete a comment from the store """
-    if not request.user.is_superuser:
-        messages.error(request, 'Sorry, only store owners can do that.')
-        return redirect(reverse('home'))
-
+    if not request.user:
+        messages.error(request, 'Sorry, only logged in user can do that.')
+        return redirect(reverse('all_comments'))
+    
     comment = get_object_or_404(Comment, pk=comment_id)
     comment.delete()
-    messages.success(request, 'Comment deleted!')
+    messages.success(request, 'Note deleted!')
     return redirect(reverse('all_comments'))

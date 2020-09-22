@@ -11,7 +11,8 @@
 
 {% block content %}
     <div class="overlay"></div>
-    <div class="container-fluid">
+    <div class="container-fluid col-12">
+   
         <div class="row">
             <section class="classtime-section class-time-table ">
                 <hr>
@@ -19,11 +20,11 @@
                     <h1 class="white-h1">Classtime Table</h1>
                 </div>
                 <hr>
-            </div>
-        </div>
+            </section>
+            </div>  
 
         <div class="row mt-3">
-            <div class="col-12 justify">
+            <div class="col-12">
                 <div class="timetable-controls">
                     <ul>
                         <li data-tsfilter="all">all class</li>
@@ -37,7 +38,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-12 justify classtime-table filtering mt-3">
+            <div class="col-10 classtime-table mx-auto filtering mt-3">
                 <table>
                     <thead>
                         <tr class="ml-3">
@@ -173,26 +174,20 @@
 </section>
 
     <!-- Classes Section Begin -->
-    <section class="classtime-section class-time-table  mt-3">
-        <div class="">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="text-center col-12 p-0">
-                        <hr class="mb-3 ">
-                        <div class="text-center">
-                            <h1 class="white-h1">Classtime Table</h1>
-                        </div>
-                        <hr class="mt-3">
-                            <p class="mb-5">Our Crossfit experts can help you discover new training techniques and exercises
-                                <br />that offer a dynamic and efficient full-body workout.</p>
-                        </div>
-                    </div>
+          <section class="classtime-section class-time-table ">
+           <div class="container-fluid col-12 p-0 m-0">
+           
+                <hr>
+                <div class=" text-center ">
+                    <h1 class="white-h1">Classes</h1>
+                    <p class="mb-5">Our experts can help you discover new training techniques and exercises
+                    <br />that offer a dynamic and efficient full-body workout.</p>
+                    <hr>
                 </div>
-            </div>
-        </div>
-        <div class="container-fluid">
-            <div class="row mb-5">
-                <div class="col-lg-3">
+             </div>       
+        <div class="container-fluid  p-0">
+            <div class="row col-12 mb-5 mx-0">
+                <div class="col-lg-3 ">
                     <div class="classes-item text-center ">
                         <h4 class="text-uppercase">Crossfit</h4>
                         <p>Sufferers around the globe will be happy to hear that there are sleep apnea remedies.</p>
@@ -222,72 +217,49 @@
                     </div>
                 </div>
             </section>
+
             <!-------------------Comments---------------->
-           <div class="container-fluid">
-           <section class="classtime-section class-time-table ">
+            <section class="classtime-section class-time-table ">
+           <div class="container-fluid col-12 p-0 m-0">
+           
                 <hr>
                 <div class=" text-center ">
-                    <h1 class="white-h1">Comments</h1>
+                    <h1 class="white-h1">Exercise notes</h1>
                 </div>
                 <hr>
-            </div>
-        <div class="row justify-content mx-auto">
+           
+        <div class="row col-12 p-3 ">
          
                     {% for comment in comments %}
-                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                            <div class="card h-100 border-0">
-                                {% if comment.image %}
-                                <a href="{% url 'comment_detail' comment.id %}">
-                                    <img class="card-img-left img-fluid " src="{{ comment.image.url }}" alt="{{ comment.name }}">
-                                </a>
-                                {% else %}
-                                <a href="{% url 'comment_detail' comment.id %}">
-                                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ comment.name }}">
-                                </a>
-                                {% endif %}
-                                <div class="card-body pb-0">
-                                    <p class="mb-0">{{ comment.name }}</p>
-                                </div>
-                                <div class="card-footer bg-white pt-0 border-0 text-left">
-                                    <div class="row">
-                                        <div class="col">
-                                           
-                                            {% if request.user.is_superuser %}
-                                                <small class="ml-3">
-                                                    <a href="{% url 'edit_comment' comment.id %}">Edit</a> | 
-                                                    <a class="text-danger" href="{% url 'delete_comment' comment.id %}">Delete</a>
-                                                </small>
-                                            {% endif %}
-                                        </div>
+                        <div class="m-3">
+                        <ul class="list-unstyled ">
+                            <li >
+                            {% if request.user == comment.created_by  %}
+                                <div class="card-body textarea  mb-3">
+                                    <h3 class="mb-0 bg-dark p-1 rounded mb-1">{{ comment.name }}</h3>
+                                    <p class="mb-0 bg-dark p-1">Modified : {{ comment.date_modified }}</p>
+                                    <p class="mb-0 bg-dark p-1">{{ comment.created_by }}</p>
+                                    <p class="mb-0 bg-dark text-white p-1">{{ comment.comment }}</p>
+                                   <div class="mt-3">
+                                                    <a class="btn" href="{% url 'edit_comment' comment.id %}">Edit</a>
+                                                    <a class="btn" href="{% url 'delete_comment' comment.id %}">Delete</a>
+                                                    <a class="btn" href="{% url 'add_comment' %}">Add</a>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        {% if forloop.counter|divisibleby:1 %}
-                            <div class="col-12 d-sm-none mb-5">
-                                <hr>
-                            </div>
-                        {% endif %}                        
-                        {% if forloop.counter|divisibleby:2 %}
-                            <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-5">
-                                <hr>
-                            </div>
-                        {% endif %}
-                        {% if forloop.counter|divisibleby:3 %}
-                            <div class="col-12 d-none d-lg-block d-xl-none mb-5">
-                                <hr>
-                            </div>
-                        {% endif %}
-                        {% if forloop.counter|divisibleby:4 %}
-                            <div class="col-12 d-none d-xl-block mb-5">
-                                <hr>
-                            </div>
-                        {% endif %}
+                                        
+                                            
+                                       
+                                   
+                                
+                                     {% endif %}
+                     
+                       </li>
+                       </ul></div> </div>
                     {% endfor %}
-                   
-                </div>
+                  
+               </div></section>
             <!--END COMMENTS-->
-            </div>
+           
         
     
     <!-- Classes Section End -->
