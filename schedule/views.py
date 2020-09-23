@@ -11,12 +11,6 @@ from django.contrib.auth.models import Permission
 from django.contrib.auth.models import User
 
 
-
-
-
-
-
-
 def schedule(request):
     """ A view to show all comments """
     if request.user:

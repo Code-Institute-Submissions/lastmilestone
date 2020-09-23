@@ -128,7 +128,13 @@ ol {
 
 
 
-/* buttons */
+/* BUTTONS */
+
+/*modal closing x*/
+
+.close {
+    color: #ffffff;
+    opacity: 1;}
 
 .btn, .btn-primary {
 	display: inline-block;
