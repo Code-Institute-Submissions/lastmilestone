@@ -1,24 +1,20 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
-from django.db.models import Q
-from django.db.models.functions import Lower
+
 
 from .models import Comment
 from .forms import CommentForm
-
-from django.contrib.auth.models import Permission
-from django.contrib.auth.models import User
 
 
 def schedule(request):
     """ A view to show all comments """
     if request.user:
-    
+
         comments = Comment.objects.all()
         context = {
             'comments': comments,
-      
+
         }
 
     return render(request, 'schedule/schedule.html', context)
@@ -38,22 +34,19 @@ def comment_detail(request, comment_id):
 
 @login_required
 def add_comment(request):
-    
     """ Add a comment to the store """
     if not request.user:
         messages.error(request, 'Sorry, only logged in user can do that.')
         return redirect(reverse('all_comments'))
-    
+
     if request.method == 'POST':
-        
+
         form = CommentForm(request.POST, request.FILES)
-        
+
         if form.is_valid():
-            
+
             comment = form.save()
-            comment.created_by=request.user
-          
-            
+            comment.created_by = request.user
 
             messages.success(request, 'Successfully added note!')
             return redirect(reverse('comment_detail', args=[comment.id]))
@@ -74,17 +67,15 @@ def add_comment(request):
 
 @login_required
 def edit_comment(request, comment_id):
-    
-    
     """ Edit a comment in the store """
-    if not request.user :
+    if not request.user:
         messages.error(request, 'Sorry, only logged in user can do that.')
         return redirect(reverse('all_comments'))
-    
+
     comment = get_object_or_404(Comment, pk=comment_id,)
-    
-    if request.method == 'POST' :
-        
+
+    if request.method == 'POST':
+
         form = CommentForm(request.POST, request.FILES, instance=comment)
         if form.is_valid():
             form.save()
@@ -109,12 +100,11 @@ def edit_comment(request, comment_id):
 
 @login_required
 def delete_comment(request, comment_id):
-    
     """ Delete a comment from the store """
     if not request.user:
         messages.error(request, 'Sorry, only logged in user can do that.')
         return redirect(reverse('all_comments'))
-    
+
     comment = get_object_or_404(Comment, pk=comment_id)
     comment.delete()
     messages.success(request, 'Note deleted!')

@@ -6,15 +6,15 @@ from django_currentuser.db.models import CurrentUserField
 
 
 class Comment(models.Model):
-    created_by= CurrentUserField(User)
+    created_by = CurrentUserField(User, on_update=True)
     name = models.CharField(max_length=254)
     comment = models.TextField()
-    date_created = models.DateTimeField(auto_now_add=True, editable=False, null=False, blank=False)
-    date_modified = models.DateTimeField(auto_now=True, editable=False, null=False, blank=False)
-class Meta:
-    abstract = True
+    date_created = models.DateTimeField(
+        auto_now_add=True, editable=False, null=False, blank=False)
+    date_modified = models.DateTimeField(
+        auto_now=True, editable=False, null=False, blank=False)
 
     def __str__(self):
-        
+
         super(Comment, self).save()
         return self.name, self.user.username

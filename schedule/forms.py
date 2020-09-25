@@ -9,7 +9,5 @@ class CommentForm(forms.ModelForm):
         model = Comment
         fields = '__all__'
 
-
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        
