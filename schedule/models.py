@@ -6,7 +6,7 @@ from django_currentuser.db.models import CurrentUserField
 
 
 class Comment(models.Model):
-    created_by= CurrentUserField(User, on_update=True)
+    created_by= CurrentUserField(User)
     name = models.CharField(max_length=254)
     comment = models.TextField()
     date_created = models.DateTimeField(auto_now_add=True, editable=False, null=False, blank=False)
