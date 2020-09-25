@@ -1,2 +1,2 @@
 
-web: gunicorn robbiesgym.wsgi:application
+web: gunicorn Gym.wsgi:application

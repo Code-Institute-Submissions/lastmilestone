@@ -6,18 +6,16 @@ from .forms import TrainerForm
 # Create your views here.
 
 
-
-
 def about_us(request):
     """ A view to show individual trainer details """
     trainer = Trainers.objects.all()
-    
 
     context = {
         'trainer': trainer,
     }
 
-    return render(request,'about_us/about_us.html', context)
+    return render(request, 'about_us/about_us.html', context)
+
 
 def trainer_detail(request, trainer_id):
     """ A view to show individual trainer details """
