@@ -6,6 +6,7 @@ from django_currentuser.db.models import CurrentUserField
 
 
 class Comment(models.Model):
+
     created_by = CurrentUserField(User, on_update=True)
     name = models.CharField(max_length=254)
     comment = models.TextField()
@@ -17,4 +18,4 @@ class Comment(models.Model):
     def __str__(self):
 
         super(Comment, self).save()
-        return self.name, self.user.username
+        return self.name
