@@ -1,11 +1,18 @@
-{% extends "base.html" %} {% load static %} {% block extra_css %}
+{% extends "base.html" %} {% load static %} 
+{% block extra_css %}
 <link rel="stylesheet" href="{% static 'css/plan.css' %}" />
-{% endblock %} {% block page_header %} {% endblock %} {% block content %}
+{% endblock %}  
+{% block page_header %}
+ <div class=" px-3 py-3 pt-md-5 pb-md-4 mx-auto mt-5 text-center">
+    <hr class="top-hr mt-5">
+    <h1 class="white-h1">Membership</h1>
+    <hr>
+  </div>
+{% endblock %}
+{% block content %}
 
-<div class="section-header px-3 py-3 pt-md-5 pb-md-4 mx-auto mt-5 text-center">
-  <hr class="top-hr" />
-  <h1 class="white-h1">Membership</h1>
-  <p class="lead">
+<div class="section-header px-3 py-3 pt-md-5 pb-md-4 mx-auto mt-3 text-center">
+<p class="lead pb-3">
     Starting out on your journey to fitness can be a daunting prospect but one
     that can change your life in the most positive way imaginable. A membership
     with <strong class="text-white">Robbie’s </strong
@@ -14,10 +21,8 @@
     unlimited access to each of its modern fitness clubs, extensive fitness
     class programmes.
   </p>
+
 </div>
-
-<hr />
-
 <div class="container col-12">
   <div class="card-group mb-3 text-center">
     <div class="card mb-4 ml-2 text-white" id="plan-1">
