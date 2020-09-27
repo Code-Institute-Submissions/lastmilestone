@@ -16,6 +16,7 @@ from basket.contexts import basket_contents
 import stripe
 import json
 
+
 @require_POST
 def cache_checkout_data(request):
     try:
@@ -71,7 +72,8 @@ def checkout(request):
                         )
                         order_line_item.save()
                     else:
-                        for size, quantity in item_data['items_by_size'].items():
+                        for size,\
+                             quantity in item_data['items_by_size'].items():
                             order_line_item = OrderLineItem(
                                 order=order,
                                 product=product,
@@ -163,7 +165,7 @@ def checkout_success(request, order_number):
         # Save the user's info
         if save_info:
             profile_data = {
-                
+
                 'default_phone_number': order.phone_number,
                 'default_country': order.country,
                 'default_postcode': order.postcode,
