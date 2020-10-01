@@ -227,6 +227,7 @@
 
 .white-h1{
 	font-size: 1.5rem;}
+    
 .classtime-table{
     overflow-x: auto;
 }
@@ -237,14 +238,12 @@
 }
 .timetable-controls {
     font-size: .8rem;
-    text-align: center;
-   
+    text-align: center;}
 }
 
-}
 @media (max-width: 350px){
 
-.section-title, .logo-font{
+.logo-font{
 	font-size: 1rem;}
 
 .white-h1{

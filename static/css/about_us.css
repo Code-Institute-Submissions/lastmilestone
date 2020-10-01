@@ -97,19 +97,16 @@ img {
     background: -o-linear-gradient(45deg, #e16521, #e4381C);
     background: linear-gradient(45deg, #e16521, #e4381C);
     width:100%;
-    
     padding: 10px;
     margin: 0;
-  
     -webkit-clip-path: polygon(0 0, 100% 0%, 100% 0, 100% 100%, 0 100%);
     clip-path: polygon(0 0, 100% 0%, 100% 0, 100% 100%, 0 100%); 
 }
 
 .trainer-item{
-    background-color:#000000 ;
+    background-color:#000000;
+    margin: 10px;
    } 
-
-.card-body{padding: 0;}
 
 @media (max-height: 812px)and (max-width: 780px) {
     .logo-font{

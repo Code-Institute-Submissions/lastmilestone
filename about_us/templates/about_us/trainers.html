@@ -14,21 +14,28 @@
             <div class="row mb-5 trainer-row">          
                 <div class="card-deck col-12">
                  {% for trainer in trainer %}
+                 <div class="card trainer-item ">
                     {% if trainer.image %}
-                    
-                        <div class="card trainer-item">
+                 
+                       
                            <a href="{% url 'trainer_detail' trainer.id %}">
                                     <img class="card-img-top " src="{{ trainer.image.url }}" alt="{{ trainer.name }}">
                                 </a>
-                                <div class="card-body text-center">
-                            <h5 class="trainer card-text py-md-2 py-3">{{ trainer.name }} <span>- Trainer</span></h5>
-                            </div></div>
+                                <div class="card-body trainer text-center">
+                            <h5 class=" card-text py-md-2 py-3">{{ trainer.name }} <span>- Trainer</span></h5>
+                            </div>
+                  
                         {% else %}
+                        
                                 <a href="{% url 'trainer_detail' trainer.id %}">
-                                    <img class="" src="{{ MEDIA_URL }}noimage.png" alt="{{ trainer.name }}">
-                                    <h5 class="trainer card-text">{{ trainer.name }} <span>- Trainer</span></h5>
+                                    <img class="card-img-top " src="{{ MEDIA_URL }}noimage.png" alt="{{ trainer.name }}">
                                 </a>
+                            <div class="card-body trainer text-center">
+                            <h5 class=" card-text py-md-2 py-3">{{ trainer.name }} <span>- Trainer</span></h5>
+                            </div>
+                        
                                 {% endif %}
+              </div>
                           {% endfor %} 
                     </div>
                 </div>
