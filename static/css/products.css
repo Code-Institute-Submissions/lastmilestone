@@ -26,3 +26,9 @@
     font-size: 1.5em;
     margin-top: 80px;
 }}
+
+@media (max-width: 281px){
+.white-h1 {
+    font-size: 1rem;
+    margin-top: 80px;
+}}

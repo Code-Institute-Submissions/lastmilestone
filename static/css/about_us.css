@@ -58,6 +58,12 @@ img {
 
 }
 
+.white-h4 {
+	color: #ffffff;
+	margin-bottom: 40px;
+	margin-top: 40px;
+}
+
 .white-h5 {
 	font-size: 20px;
 	font-weight: 600;
@@ -66,11 +72,7 @@ img {
 	margin-bottom: 20px;
 }
 
-.white-h4 {
-	color: #ffffff;
-	margin-bottom: 40px;
-	margin-top: 40px;
-}
+
 
 /* List */
 
@@ -96,7 +98,7 @@ img {
     background: linear-gradient(45deg, #e16521, #e4381C);
     width:100%;
     
-    padding: 10;
+    padding: 10px;
     margin: 0;
   
     -webkit-clip-path: polygon(0 0, 100% 0%, 100% 0, 100% 100%, 0 100%);
@@ -143,3 +145,8 @@ img {
     .py-md-1{
     font-size: 1rem;}
 }
+
+@media (max-width: 281px){
+
+.logo-font{
+        font-size:1rem;}}

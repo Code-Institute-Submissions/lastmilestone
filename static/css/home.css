@@ -65,12 +65,9 @@
 /*  Carousel  */
 
 .carousel-caption{
-    padding: auto;
     margin-bottom: 50px;
     }
     
-
-
 .carousel-indicators .active{
 		background-color: #f00;
 	}
@@ -89,7 +86,7 @@
         font-size: 1rem;
         margin-top: 10px;}
     .carousel-caption p{
-        font-size:.5;
+        font-size:.5rem;
          padding: 0%;
         margin: 0%;}
 
@@ -107,12 +104,10 @@
     .car-h1, .car-h3{
         font-size: 2rem;
         padding-top: 20px;
-       }
+    }
     .carousel-item{margin-top: 20px;} 
 
     .carousel-caption p{
-        font-size:.5;}
-
-    
-}
+        font-size:.5rem;}
+    }}
 

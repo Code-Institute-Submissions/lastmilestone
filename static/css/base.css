@@ -1,6 +1,4 @@
 
-
-
 /* Body */
 
 /* Scrollbar */
@@ -379,3 +377,11 @@ body > div.message-container > div > div.toast-body > div:nth-child(4) > div > p
 @media  (max-width: 450px) {
     .footer{ background-image: linear-gradient( rgb(102, 39, 3) , #e4381C);
 } }
+
+@media (max-width: 281px){
+.white-h1 {
+    font-size: 1.5rem;
+    margin-top: 40px;
+}
+.logo-font{
+        font-size:1rem;}}
