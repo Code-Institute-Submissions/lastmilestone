@@ -1,169 +1,246 @@
-{% extends "base.html" %}
-{% load static %}
+{% extends "base.html" %} {% load static %} {% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}" />
+{% endblock %} {% block page_header %} {% endblock %} {% block content %}
 
-{% block extra_css %}
-    <link rel="stylesheet" href="{% static 'css/home.css' %}">
-{% endblock %}
+<main>
+  <!-- Carousel -->
 
-{% block page_header %}
-   
-{% endblock %}
-
-{% block content %}
-  
-<main role="main">
-<!-- Carousel -->
-
-  <div id="myCarousel" class="carousel slide mx-auto col-sm-12 carousel-fade" data-ride="carousel">
+  <div
+    id="myCarousel"
+    class="carousel slide mx-auto col-sm-12 carousel-fade"
+    data-ride="carousel"
+  >
     <ol class="carousel-indicators m-b pb-5">
-      <li data-target="#myCarousel" data-slide-to="0" class=" carousel-indicator active"></li>
-      <li data-target="#myCarousel" data-slide-to="1" class=" carousel-indicator"></li>
-      <li data-target="#myCarousel" data-slide-to="2" class=" carousel-indicator"></li>
+      <li
+        data-target="#myCarousel"
+        data-slide-to="0"
+        class="carousel-indicator active"
+      ></li>
+      <li
+        data-target="#myCarousel"
+        data-slide-to="1"
+        class="carousel-indicator"
+      ></li>
+      <li
+        data-target="#myCarousel"
+        data-slide-to="2"
+        class="carousel-indicator"
+      ></li>
     </ol>
-    <div class="carousel-inner mb-3 mt-3 ">
-      <div class="carousel-item active ">
-         <img class="d-block w-100" src="https://robbiesgym.s3.eu-west-2.amazonaws.com/static/img/car-1.jpg">
-          <div class="container">
-            <div class="carousel-caption center mb-5">
-              <h3 class="white-h3 car-h3">Join Us Now</h3>
-                 <h1 class="white-h1 car-h1">FITNESS & <strong class="red">SPORT</strong></h1>
-                 <a type="button" class="btn car "  href="{% url 'account_login' %}">Sign Up</a>
-            </div>
-          </div>
-        </div>
-
-    <div class="carousel-item">
-      <img class="d-block w-100" src="https://robbiesgym.s3.eu-west-2.amazonaws.com/static/img/car-2.jpg">
+    <div class="carousel-inner mb-3 mt-3">
+      <div class="carousel-item active">
+        <img
+          class="d-block w-100"
+          src="https://robbiesgym.s3.eu-west-2.amazonaws.com/static/img/car-1.jpg"
+          alt="carousel image"
+        />
         <div class="container">
           <div class="carousel-caption center mb-5">
             <h3 class="white-h3 car-h3">Join Us Now</h3>
-               <h1 class="white-h1 car-h1">FITNESS & <strong class="red">SPORT</strong></h1>
-               <a type="button" class="btn car"  href="{% url 'account_login' %}">Sign Up</a>
+            <h1 class="white-h1 car-h1">
+              FITNESS & <strong class="red">SPORT</strong>
+            </h1>
+            <a class="btn" href="{% url 'account_login' %}">Sign Up</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img
+          class="d-block w-100"
+          src="https://robbiesgym.s3.eu-west-2.amazonaws.com/static/img/car-2.jpg "
+          alt="carousel image"/>
+        <div class="container">
+          <div class="carousel-caption center mb-5">
+            <h3 class="white-h3 car-h3">Join Us Now</h3>
+            <h1 class="white-h1 car-h1">
+              FITNESS & <strong class="red">SPORT</strong>
+            </h1>
+            <a class="btn" href="{% url 'account_login' %}">Sign Up</a>
           </div>
         </div>
       </div>
       <div class="carousel-item">
-       <img  class="d-block w-100" src="https://robbiesgym.s3.eu-west-2.amazonaws.com/static/img/car-3.jpg">
+        <img
+          class="d-block w-100"
+          src="https://robbiesgym.s3.eu-west-2.amazonaws.com/static/img/car-3.jpg"
+          alt="carousel image"/>
         <div class="container">
-          <div class="carousel-caption center mb-5 ">
+          <div class="carousel-caption center mb-5">
             <h3 class="white-h3 car-h3">Join Us Now</h3>
-            <h1 class="white-h1 car-h1">FITNESS & <strong class="red">SPORT</strong></h1>  
-            <button type="button" class="btn car" href="{% url 'account_login' %}" >Sign Up</button> </div>
+            <h1 class="white-h1 car-h1">
+              FITNESS & <strong class="red">SPORT</strong>
+            </h1>
+            <a class="btn" href="{% url 'account_login' %}">Sign Up</a>
+          </div>
         </div>
       </div>
     </div>
-    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+    <a
+      class="carousel-control-prev"
+      href="#myCarousel"
+      role="button"
+      data-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="sr-only">Previous</span>
     </a>
-    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+    <a
+      class="carousel-control-next"
+      href="#myCarousel"
+      role="button"
+      data-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
   </div>
 
-<!-- End of Carousel -->
+  <!-- End of Carousel -->
 
- <div class="container col-12 ">
-
+  <div class="container col-12">
     <!-- Three columns of text below the carousel -->
-    <hr class="mt-5">
-    
+    <hr class="mt-5" />
+
     <div class="row mt-5 center px-3">
-      <div class="col-lg-4 card text-center" style="background-image: url('https://robbiesgym.s3.eu-west-2.amazonaws.com/static/img/feature-1.jpg');">
-          <h2 class="white-h2">GROUP CLASSES</h2>
-              <p class="mt-5 ">Exercising with others can be a great way of getting fit
-               – as well as learning fresh skills and making new friends. </p>
-              <p><a class="btn" href="#group" role="button">View details</a></p>
-      
-    </div>
+      <div
+        class="col-lg-4 card text-center"
+        style="background-image: url('https://robbiesgym.s3.eu-west-2.amazonaws.com/static/img/feature-1.jpg');"
+        alt="class image">
+        <h2 class="white-h2">GROUP CLASSES</h2>
+        <p class="mt-5">
+          Exercising with others can be a great way of getting fit – as well as
+          learning fresh skills and making new friends.
+        </p>
+        <p><a class="btn" href="#group" role="button">View details</a></p>
+      </div>
 
       <!-- /.col-lg-4 -->
 
-      <div class="col-lg-4 card center text-center" style="background-image: url('https://robbiesgym.s3.eu-west-2.amazonaws.com/static/img/feature-2.jpg');">  
-         <h2 class="white-h2 ">PERSONAL TRAINING</h2>
-         <p class="mt-5">A personal trainer is dedicated to you and your goals, a
-         nd will have a significant impact on your training routine.</p>
-         <p><a class="btn" href="#pt" role="button">View details</a></p>
+      <div
+        class="col-lg-4 card center text-center"
+        style="background-image: url('https://robbiesgym.s3.eu-west-2.amazonaws.com/static/img/feature-2.jpg');"
+        alt="class image">
+        <h2 class="white-h2">PERSONAL TRAINING</h2>
+        <p class="mt-5">
+          A personal trainer is dedicated to you and your goals, a nd will have
+          a significant impact on your training routine.
+        </p>
+        <p><a class="btn" href="#pt" role="button">View details</a></p>
       </div>
       <!-- /.col-lg-4 -->
 
-      <div class="col-lg-4 card center text-center" style="background-image: url('https://robbiesgym.s3.eu-west-2.amazonaws.com/static/img/feature-3.jpg');"> 
+      <div
+        class="col-lg-4 card center text-center"
+        style="background-image: url('https://robbiesgym.s3.eu-west-2.amazonaws.com/static/img/feature-3.jpg');"
+        alt="class image">
         <h2 class="white-h2">Sports Nutrition</h2>
-        <p class="mt-5">We should all aim to eat a healthy diet based on the principles of the Eatwell Guide,
-         and this is also the case when you are active.</p>
-         <p><a class="btn" href="#sp" role="button">View details</a></p>
-      </div><!-- /.col-lg-4 -->
+        <p class="mt-5">
+          We should all aim to eat a healthy diet based on the principles of the
+          Eatwell Guide, and this is also the case when you are active.
+        </p>
+        <p><a class="btn" href="#sp" role="button">View details</a></p>
+      </div>
+      <!-- /.col-lg-4 -->
     </div>
     <!-- /.row -->
 
-
-
     <!-- FEATURETTE -->
 
-    <hr class="mt-5">
+    <hr class="mt-5" />
 
-    <div class="row  p-3 mt-5">
+    <div class="row p-3 mt-5">
       <div class="col-md-5" id="group">
-        <img src="https://robbiesgym.s3.eu-west-2.amazonaws.com/static/img/group.jpg" class="bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto" width="500" height="500"
-        preserveAspectRatio="xMidYMid slice"  focusable="false" role="img" >
-        <rect width="100%" height="100%" fill="#eee"/>
+        <img
+          src="https://robbiesgym.s3.eu-west-2.amazonaws.com/static/img/group.jpg"
+          class="bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto"
+          width="500"
+          height="500"
+          alt="article image" /
       </div>
 
-    <div class="col-md-7">
-        <h2 >GROUP <span class="red">CLASSES</span></h2>
-        <p class="lead mt-3">If you’ve ever stepped foot into a cycle studio, tried out a Zumba dance class at your local gym, 
-            or joined in on a quick yoga session, you have been a part of a group exercise class. </p>
-        <p class="lead"><br>So, what is group exercise exactly?<br> </p>
-        <p class="lead">‘Group exercise’ simply means that a workout is led by an instructor or trainer in a group setting. 
-        <br>You can find a group exercise class to fit any and all of your fitness needs.
-            Whether you are looking for group exercises for seniors (like our BOXERCIZE classes)
-            or are brand new to the gym—group exercise is a smart way to get healthy with your peers.</p>
+      <div class="col-md-7">
+        <h2>GROUP <span class="red">CLASSES</span></h2>
+        <p class="lead mt-3">
+          If you’ve ever stepped foot into a cycle studio, tried out a Zumba
+          dance class at your local gym, or joined in on a quick yoga session,
+          you have been a part of a group exercise class.
+        </p>
+        <p class="lead"><br />So, what is group exercise exactly?<br /></p>
+        <p class="lead">
+          ‘Group exercise’ simply means that a workout is led by an instructor
+          or trainer in a group setting. <br />You can find a group exercise
+          class to fit any and all of your fitness needs. Whether you are
+          looking for group exercises for seniors (like our BOXERCIZE classes)
+          or are brand new to the gym—group exercise is a smart way to get
+          healthy with your peers.
+        </p>
       </div>
-      </div>
+    </div>
 
     <hr>
 
     <div class="row p-3">
-    <div id="pt" class="col-md-7">
-        <h2 >PERSONAL <span class="red">TRAINERS</span></h2>
+      <div id="pt" class="col-md-7">
+        <h2>PERSONAL <span class="red">TRAINERS</span></h2>
         <p class="lead mt-3">Do you want to get fit or lose weight fast?</p>
-        <p class="lead">The answer is not some miracle supplement and there are no mysterious secrets, it’s simple … work out with a Personal Trainer. 
-            Everybody’s doing it. You should be doing it too.</p>
-        <p class="lead"> Why should just the rich people get the best? We all deserve to look after 
-        ourselves.Personal Trainers offer a variety of services and motivation that go far beyond a general exercise program.</p>
+        <p class="lead">
+          The answer is not some miracle supplement and there are no mysterious
+          secrets, it’s simple … work out with a Personal Trainer. Everybody’s
+          doing it. You should be doing it too.
+        </p>
+        <p class="lead">
+          Why should just the rich people get the best? We all deserve to look
+          after ourselves.Personal Trainers offer a variety of services and
+          motivation that go far beyond a general exercise program.
+        </p>
 
         <p class="lead">What can Personal Training do for me?</p>
-        <p class="lead">It’s simple... a <strong class="text-white">Robbie’s </strong><strong class="red">GYM</strong> Personal Trainer will provide a personalised health and fitness programme 
-            to suit your lifestyle and your goals.
-            A Personal Trainer may be just what you need to turn your good intentions into reality. Through consultation, our Personal Trainers help you identify your ultimate fitness goal and make reaching that goal fun.</p> </div>
-    <div class="col-md-5">
-        <img src="https://robbiesgym.s3.eu-west-2.amazonaws.com/static/img/personal.jpg" class="bd-placeholder-img bd-placeholder-img-lg  img-fluid mx-auto" width="500" height="500" 
-         preserveAspectRatio="xMidYMid slice" focusable="false" role="img" ><rect width="100%" height="100%" fill="#eee"/>
-    </div>
+        <p class="lead">
+          It’s simple... a <strong class="text-white">Robbie’s </strong
+          ><strong class="red">GYM</strong> Personal Trainer will provide a
+          personalised health and fitness programme to suit your lifestyle and
+          your goals. A Personal Trainer may be just what you need to turn your
+          good intentions into reality. Through consultation, our Personal
+          Trainers help you identify your ultimate fitness goal and make
+          reaching that goal fun.
+        </p>
+      </div>
+      <div class="col-md-5">
+        <img
+          src="https://robbiesgym.s3.eu-west-2.amazonaws.com/static/img/personal.jpg"
+          class="bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto"
+          width="500"
+          height="500"
+          alt="article image"/>
+      </div>
     </div>
 
-    <hr >
+    <hr>
 
-    <div class="row  p-3">
-       <div class="col-md-5">
-        <img src="https://robbiesgym.s3.eu-west-2.amazonaws.com/static/img/small-3.jpg" class="bd-placeholder-img bd-placeholder-img-lg  img-fluid mx-auto" width="500" height="500" 
-         preserveAspectRatio="xMidYMid slice" focusable="false" role="img" ><rect width="100%" height="100%" fill="#eee"/>
+    <div class="row p-3">
+      <div class="col-md-5">
+        <img
+          src="https://robbiesgym.s3.eu-west-2.amazonaws.com/static/img/small-3.jpg"
+          class="bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto"
+          width="500"
+          height="500"
+          alt="article image"/>
       </div>
       <div class="col-md-7">
         <h2 id="sp">SPORTS<span class="red"> NUTRITION</span></h2>
-        <p class="lead mt-3">Sports nutrition is the study and practice of nutrition and diet with regards to improving anyone's 
-        athletic performance.
-         Nutrition is an important part of many sports training regimens, 
-         being popular in strength sports (such as weightlifting and bodybuilding) and endurance sports 
-         (e.g. cycling, running, swimming, rowing).
-          <br>Sports nutrition focuses its studies on the type, as well as the quantity of fluids and food taken by an athlete. 
-          In addition, it deals with the consumption of nutrients such as vitamins, minerals,
-         supplements and organic substances that include carbohydrates, proteins and fats.</p> <a class="btn" href="{% url 'products' %}">Go to products</a></div>
-     
+        <p class="lead mt-3">
+          Sports nutrition is the study and practice of nutrition and diet with
+          regards to improving anyone's athletic performance. Nutrition is an
+          important part of many sports training regimens, being popular in
+          strength sports (such as weightlifting and bodybuilding) and endurance
+          sports (e.g. cycling, running, swimming, rowing). <br />Sports
+          nutrition focuses its studies on the type, as well as the quantity of
+          fluids and food taken by an athlete. In addition, it deals with the
+          consumption of nutrients such as vitamins, minerals, supplements and
+          organic substances that include carbohydrates, proteins and fats.
+        </p>
+        <a class="btn" href="{% url 'products' %}">Go to products</a>
+      </div>
     </div>
   </div>
 </main>
 {% endblock %}
-
-   
