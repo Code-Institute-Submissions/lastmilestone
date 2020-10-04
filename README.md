@@ -2,11 +2,11 @@
 
 View the live project here.
 
-​	This website a milestone project for Code Institute.  The project purpose is to create a website that allows users or an 	admin to store and manipulate data records.
+​	This website a milestone project for Code Institute.  The project's purpose is to create a website that allows users or  	an admin to store and manipulate data records.
 
 ​	It is a website for a fictional gym.
 
-​	The project allowing a user or an admin  to create, read, update and delete (full CRUD functionality) data. 
+​	The project allowing a user or an admin  to create, read, update, and delete (full CRUD functionality) data. 
 
 <h2 align="center"><img src="https://robbiesgym.s3.eu-west-2.amazonaws.com/media/allresp.png"></h2>
 
@@ -26,15 +26,15 @@ View the live project here.
   2. As a First Time Visitor, I want to be able to easily navigate throughout the site to find content.
   3. As a First Time Visitor, I want to be able to easily find the location of the gym.
   5. As a First Time Visitor, I want to see what kind of exercises, facilities are there.
-  6. As a First Time Visitor,I want to find information about products and trainers and membership options.
+  6. As a First Time Visitor, I want to find information about products, and trainers and membership options.
   7.  As a First Time Visitor, I want to locate their social media links to see their followings on social media to determine how trusted and known they are.
 
 - #### Returning Visitor Goals
 
   1. As a Returning Visitor, I want to find information about classes and class timetables.
     2. As a Returning Visitor, I want to find information about products and trainers and membership options.
-    3. As a Returning Visitor, I want to find the way to get in touch with the GYM.
-    4. As  a Returning Visitor, I want to find community links..
+    3. As a Returning Visitor, I want to find a way to get in touch with the GYM.
+    4. As  a Returning Visitor, I want to find community links.
 
 - #### Frequent User Goals
 
@@ -47,23 +47,23 @@ View the live project here.
 
 - #### Admin User Goals
 
-  1. As a Admin User, I want to be able to safely log in.
-    2. As a Admin User, I want to to be able to add, edit and delete products.
-    3. As a Admin User,  I want to to be able to add, edit and delete trainers.
-    4. As a Admin User, I want to to be able to add, edit and delete users if needed.
-    5. As a Admin User, I want to see users previous purchases.
+  1. As an Admin User, I want to be able to safely log in.
+    2. As an Admin User, I want to be able to add, edit ,and delete products.
+    3. As an Admin User,  I want to be able to add, edit ,and delete trainers.
+    4. As an Admin User, I want to be able to add, edit ,and delete users if needed.
+    5. As an Admin User, I want to see user's previous purchases.
 
 ### Design
 -   #### Colour Scheme
-    -   The main colours used are black,orange and white.
-    -   The black is gives a bit of a serious look to the website, white makes it crispy and orange makes it fresh and lively.
-    -   Orange lines,underlines and highlights are used to brake the seriousness of the blacks darkness. 
+    -   The main colours used are black,orange, and white.
+    -   The black gives a bit of a serious look to the website, white makes it crispy and orange makes it fresh and lively.
+    -   Orange lines, underlines, and highlights are used to break the seriousness of the darkness of the black. 
     
 -   #### Typography
-    -   Nunito-Sans, sans-serif font used mostly on the website with Sans Serif as the fall-back font in case for any reason the font isn't being imported into the site correctly. Nunito Sans is gives a professional look to the website..
+    -   Nunito-Sans, sans-serif font used mostly on the website with Sans Serif as the fall-back font in the case for any reason the font isn't being imported into the site correctly. Nunito Sans is given a professional look to the website.
     
 -   #### Imagery
-    - Large images used to be striking and catch the user's attention. Carousels added to give the impression of movement of the pages .
+    - Large images used to be striking and to catch the user's attention. Carousels added to give the impression of movement of the pages.
     
       
 
@@ -81,8 +81,8 @@ View the live project here.
 -   Authentication with Django-[Allauth](https://django-allauth.readthedocs.io/en/latest/installation.html)
 -   Secure payment with [Stripe](https://stripe.com)
 -   Membership options on PLAN page.
--   PRODUCT page - supplements,clothes and drinks
--   Search by categories, sorting by and word search on PRODUCT page.
+-   PRODUCT page - supplements, clothes, and drinks
+-   Search by categories, sorting by, and word search on PRODUCT page.
 -   SCHEDULE page with timetable and notes(full CRUD functionality).
 -   CONTACTS page Email sending function and google map.
 
@@ -126,15 +126,15 @@ Bootstrap 4:
 
 [Git](https://git-scm.com/)
 
-- Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+- Git was used for version control by utilizing the Gitpod terminal to commit to Git and push to GitHub.
 
 [GitHub:](https://github.com/)
 
-- GitHub is used to store the projects code after being pushed from Git.
+- GitHub is used to store the project's code after being pushed from Git.
 
 [PhotoScape X:](http://x.photoscape.org/)
 
-- PhotoScape X was used to create the image for README.md, resizing images and editing photos for the website.
+- PhotoScape X was used to create the image for README.md, resizing images, and editing photos for the website.
 
 [Justinmind:](https://www.justinmind.com/)
 
@@ -180,28 +180,26 @@ Validation results
 
   1. Upon entering the site, users are automatically greeted with a clean and easily readable navigation bar to go to the page of their choice. Underneath there is a Carousel with Text and a "Sign Up" Call to action button.
   2. The carousel images giving a dynamic feels to the website.
-  3. The user has an options, click the buttons to sign up to Robbie's GYM or scroll down to learn more about the GYM.
+  3. The user has options, click the buttons to sign up to Robbie's GYM or scroll down to learn more about the GYM.
 
   **As a First Time Visitor,** I want to be able to easily be able to navigate throughout the site to find content.
 
-  1.  At the top of each page there is a clean navigation bar, each link describes what the page they will end up at clearly. The actual page's name get a highlight and an underline helps to identify the page for the user.
-  2. On every pages there is a redirection call to action to ensure the user always has somewhere to go and doesn't feel trapped as they get to the bottom of the page. There are modals with information too.
-  3. On the Contact page there is a form to send message to the site admin. Also there is a google map with opening times and a dot to show the location of our GYM.
+  1.  At the top of each page, there is a clean navigation bar, each link describes what the page they will end up at clearly. The actual page's name gets a highlight and an underline helps to identify the page for the user.
+  2. On every pages, there is a redirection call to action to ensure the user always has somewhere to go and doesn't feel trapped as they get to the bottom of the page. There are modals with information too.
+  3. On the Contact page, there is a form to send a message to the site admin. Also, there is a google map with opening times and a dot to show the location of our GYM.
 
   **As a First Time Visitor,** I want to see what kind of exercises, facilities are there.
 
   1. Once the new visitor on the About Us page they will notice what kind of exercises, facilities we offer.
-  2. The user can also scroll to the bottom of this page to read about our trainers..
+  2. The user can also scroll to the bottom of this page to read about our trainers.
 
-  **As a First Time Visitor,**I want to find information about products and trainers and membership options.
+  **As a First Time Visitor,** I want to find information about products, and trainers and membership options.
 
   1. On the navbar About us, Plans and Products pages shows this information to user. 
 
-  **As a First Time Visitor,** I want to locate their social media links to see their followings on social media to 
+  **As a First Time Visitor,** I want to locate their social media links to see their followings on social media to determine how trusted and known they are.
 
-  ​		determine how trusted and known they are.
-
-  1. The footer of the bottom of every page shows our social media links.(They aren't valid Robbie's GYM links,but they takes user to the relevant social media platform.)
+  1. The footer of the bottom of every page shows our social media links. (They aren't valid Robbie's GYM links, but they take the user to the relevant social media platform.)
 
   
 
@@ -210,16 +208,16 @@ Validation results
   1. As a **Returning Visitor**, I want to find information about classes and class timetables.
 
       1. These are under the schedule page.
-      2. There are options to show the classes, all of them or individual class.
-      3. Under the time table, user can find some information about some of our classes.
+      2. There are options to show the classes, all of them or individual classes.
+      3. Under the timetable, the user can find some information about some of our classes.
 
-  2. As a **Returning Visitor**,I want to find the best way to get in contact with Robbie's GYM with any questions I may have.
+  2. As a **Returning Visitor**, I want to find the best way to get in contact with Robbie's GYM with any questions I may have.
 
-      1. The navigation bar clearly highlights the "Contact" page.
-      2. Here they can fill out the form on the page to send a message to us or use our contact information to reach us. Alternatively they can message the organisation on social media.
+      1. The navigation bar highlights the "Contact" page.
+      2. Here they can fill out the form on the page to send a message to us or use our contact information to reach us. Alternatively, they can message the GYM on social media.
 
   3. As  a **Returning Visitor**, I want to find social media links.
-      1. The footer contains links to the social media Facebook, Twitter, LinkedIn, Instagram and Youtube.
+      1. The footer contains links to the social media Facebook, Twitter, LinkedIn, Instagram, and Youtube.
       
       2. Whichever link they click, it will be open up in a new tab to ensure the user can easily get back to the website.
       
@@ -229,73 +227,73 @@ Validation results
 
     As a **Frequent User**, I want to be able to safely log in.
 
-    1. The user would get a "Verify Your E-mail Address" message to make sure user is valid.
+    1. The user would get a "Verify Your E-mail Address" message to make sure the user is valid.
 
        (we used Django-allauth for registration and login/off functions.)
 
     As a **Frequent User**, I want to check to see if there are any newly added classes in the timetable
 
-    1. The user would already be comfortable with the website layout and can easily click the right link in navigation.
+    1. The user would already be comfortable with the website layout and can easily click the right link in the navigation.
     
     As a **Frequent User**, I want to check to see if there are any new products, trainers or membership options.
     
-    1. The user would already be comfortable with the website layout and can easily click the right link in navigation.
+    1. The user would already be comfortable with the website layout and can easily click the right link in the navigation.
     
     As a **Frequent User**, I want to see my notes about my progress and modify or delete them.
     
-    1. A logged in user can add notes to the Schedule page(for example :a note about exercises etc), can be seen by user only. It can be edited or deleted. Timestamp automatically added at creation or modification.
+    1. A logged-in user can add notes to the Schedule page(for example: a note about exercises etc), can be seen by the user only. It can be edited or deleted. Timestamp automatically added at creation or modification.
     
     As a **Frequent User**, I want to see my previous purchases.
     
-    1. A logged in user can see prior purchases on clicking on My account and on my profile to see user info and past purchases.
+    1. A logged-in user can see prior purchases by clicking on My Account and on my profile to see user info and past purchases.
     
     As a **Frequent User**, I want to be able to purchase products or membership.
     
-    1. A logged in user can purchase products from Product page and Membership from Plans page by clicking on membership's buy button.
+    1. A logged-in user can purchase products from the Product page and Membership from the Plans page by clicking on the membership's buy button.
     
        
     
 - #### Admin Goals
 
-  1. As a **Admin User,** I want to be able to safely log in.
+  1. As an **Admin User,** I want to be able to safely log in.
 
      1. Django-Allauth gives all the functions for safe authentication.
      2. There are options on the admin panel  Authentication and Authorization to give staff status to users.
      
-2. As a **Admin User,** I want to to be able to add, edit and delete products.
+2. As an **Admin User,** I want to be able to add, edit and delete products.
   
-     1. Admin has a full CRUD functionality for product. Go to my account then choose Product Management .
+     1. Admin has a full CRUD functionality for the product. Go to my account then choose Product Management .
      
-        Then on Add Product admin can add product, after adding a product, a Product details page comes up where Admin can edit or delete product.
+        Then on Add Product admin can add product, after adding a product, a Product details page comes up where Admin can edit or delete the product.
      
-     2. Admin can choose product from Product page, click on the picture or edit button to go the Edit Product page. If Admin want to delete product ,click on delete button under the product's picture.
+     2. Admin can choose a product from the Product page, click on the picture or edit button to go the Edit Product page. If Admin wants to delete product, click on the delete button under the product's picture.
      
-  3. As a **Admin User,**  I want to to be able to add, edit and delete trainers.
+  3. As an **Admin User,**  I want to to be able to add, edit, and delete trainers.
   
      1. Admin has a full CRUD functionality for trainers. Go to my account then choose Trainer Management .
-  
+    
         Then on Add Trainer Admin can add trainer, after adding a trainer, a Trainer details page comes up where Admin can edit or delete trainer.
-  
-     2. Admin can choose trainer from About us page, click on the picture or edit button to go the Edit Trainer page. If Admin want to delete trainer ,click on the trainers picture then on Trainer page click on delete button next to the trainer's picture.
-  
-    4. As a **Admin User,** I want to to be able to add, edit and delete users if needed.
-  
-       1. Admin have to go to the admin panel (https://robbiesgym.herokuapp.com/admin/auth/user/) ,after log in, Admin able to delete users.
-  
-    5. As a **Admin User,** I want to see users previous purchases.
-  
-       1. Admin have to go to the admin panel (https://robbiesgym.herokuapp.com/admin/checkout/order/) ,after log in, Admin able to see user's orders.
+    
+     2. Admin can choose a trainer from the About us page, click on the picture or edit button to go the Edit Trainer page. If Admin wants to delete a trainer, click on the trainer's picture then on the Trainer page click on the delete button next to the trainer's picture.
+    
+        4. As an **Admin User,** I want to be able to add, edit, and delete users if needed.
+    
+       1. Admin has to go to the admin panel (https://robbiesgym.herokuapp.com/admin/auth/user/) ,after log in, Admin able to delete users.
+    
+            5. As an **Admin User,** I want to see users previous purchases.
+    
+       1. Admin have to go to the admin panel (https://robbiesgym.herokuapp.com/admin/checkout/order/), after log in, Admin able to see user's orders.
 
 
 ### 
 
 ### Further Testing
 
--   The Website was tested on Google Chrome, Internet Explorer, Microsoft Edge and Safari browsers.
+-   The Website was tested on Google Chrome, Internet Explorer, Microsoft Edge, and Safari browsers.
 -   The website was viewed on a variety of devices such as Desktop, Laptop, iPhone7, iPhone 8 & iPhoneX .
 -   A large amount of testing was done to ensure that all pages were linking correctly.
 -   Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
--   We tested every page on [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) for CSS and [Nu HTML checker](https://validator.w3.org/) for HTML . All test came out valid and without errors. Results are here: [CSS](https://github.com/robibrutoczki/lastmilestone/tree/lastmilestone/Documentation/CSSvalid) and [HTML](https://github.com/robibrutoczki/lastmilestone/blob/lastmilestone/Documentation/CSSvalid/Checkout.png) .
+-   We tested every page on [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) for CSS and [Nu HTML checker](https://validator.w3.org/) for HTML . All test came out valid and without errors. The results are here: [CSS](https://github.com/robibrutoczki/lastmilestone/tree/lastmilestone/Documentation/CSSvalid) and [HTML](https://github.com/robibrutoczki/lastmilestone/blob/lastmilestone/Documentation/CSSvalid/Checkout.png) .
 
 Tested Authentication and Note  [pdf](https://github.com/robibrutoczki/lastmilestone/blob/lastmilestone/Documentation/Signinpictures/Signinprocess.pdf)
 
@@ -312,7 +310,7 @@ Tested Authentication and Note  [pdf](https://github.com/robibrutoczki/lastmiles
   python manage.py runserver
   ```
 
-  in GitPod. This bug makes no effect on the website .
+  in GitPod. This bug makes no effect on the website.
 
   
 
@@ -354,15 +352,15 @@ Used GitHub Repository to deploy our project on Heroku..
 
 1. Log in to Heroku
 
-2. Go to Deploy on menu, choose GitHub on Deployment method.
+2. Go to Deploy on the menu, choose GitHub on the Deployment method.
 
 3. Type in the repository, where our product is.
 
 4. Click  connect
 
-5. Scroll down to Automatic deploys,and enable automatic deploys.
+5. Scroll down to Automatic deploys, and enable automatic deploys.
 
-   From now if we push anything to this git repo, it will be automatically deploy on Heroku.
+   From now if we push anything to this git repo, it will be automatically deployed on Heroku.
 
 6. Now go to settings, scroll down to Config Vars and press Reveal Config Vars.
 
@@ -378,7 +376,7 @@ Used GitHub Repository to deploy our project on Heroku..
 
    
 
-7. Go to Resources menu and on the add-ons , type Heroku Postgres.
+7. Go to Resources menu and on the add-ons, type Heroku Postgres.
 
 8. Then attach to are project. Go back to Config Vars and add the keys:
 
@@ -392,11 +390,11 @@ Used GitHub Repository to deploy our project on Heroku..
 
 10. Then there is two ways to deploy your project :
 
-    - In Heroku go back to Deploy ,scroll down to Manual deploy and press Deploy Branch or
+    - In Heroku go back to Deploy,scroll down to Manual deploy, and press Deploy Branch or
 
     - In GitPod push something (README.md etc) to GitHub
 
-    Go to Activity in Heroku's menu , in the Activity Feed you can see your project uploading/installing.
+    Go to Activity in Heroku's menu, in the Activity Feed you can see your project uploading/installing.
 
      
 
@@ -404,13 +402,13 @@ Used GitHub Repository to deploy our project on Heroku..
 
 11. **Note**
 
-    - Sometimes you need to use Heroku's console, click on More ,that is on the top right corner .
+    - Sometimes you need to use Heroku's console, click on More, that is on the top right corner.
 
-      Choose run console, it is a console but with limited functionality ,compared to GitPods terminal.
+      Choose run console, it is a console but with limited functionality, compared to GitPod's terminal.
 
       I had to use it to my project to sync the database.
 
-    - If you leave a tailing white space after the value of the key ,the key might not work.   
+    - If you leave a trailing white space after the value of the key, the key might not work.   
 
     
 
@@ -480,17 +478,17 @@ Used GitHub Repository to deploy our project on Heroku..
 
      This means your bucket open to GetObject requests
 
-9. Go to Properties and click on Static website hosting,add index.html and error.html and save
+9. Go to Properties and click on Static website hosting, add index.html and error.html and save
 
    with this our bucket is ready.
 
 10. Go to services and find IAM **Identity and Access Management (IAM)**.
 
-11. Go to groups and create one (ie:manage-mysite), then go to Policies to create a policy,click on create policy.
+11. Go to groups and create one (ie:manage-mysite), then go to Policies to create a policy, click on create policy.
 
-12. Click on the JSON tab and you can see import policy. Click on it than choose S3 AmazonS3FullAccess policy then add the arn. We using a list here. First is the bucket ,second is adds another rule for all files.
+12. Click on the JSON tab and you can see the import policy. Click on it then choose S3 AmazonS3FullAccess policy then add the arn. We using a list here. First is the bucket, second is adds another rule for all files.
 
-    Review policy , give a name and a decryption to it then create policy.
+    Review policy, give a name, and decryption to it then create policy.
 
     ```
     {
@@ -510,17 +508,17 @@ Used GitHub Repository to deploy our project on Heroku..
 
     
 
-13. Go back to Groups and Attach Policy. Choose your policy. Tick the box and attach policy button on the right bottom of the page.
+13. Go back to Groups and Attach Policy. Choose your policy. Tick the box and attach the policy by pressing the button on the right bottom of the page.
 
-14. Go to Users, add user. Add a user name and **Programmatic access** then next permissions. Add User to the group.
+14. Go to Users, add a user. Add a user name and **Programmatic access** then next permissions. Add the user to the group.
 
-15. Click until the end to create user.
+15. Click until the end to create the user.
 
-16. Download .csv file (containing user keys) This keys need for Django app and Heroku's Config Var. 
+16. Download .csv file (containing user keys) These keys need for Django app and Heroku's Config Var. 
 
-17. Than we have to install boto3 and django-storages to Django. Add storages to installed apps.
+17. Then we have to install boto3 and Django-storages for Django. Add storages to installed apps.
 
-    Need a setup to let django know which bucket we communicate with.
+    Need a setup to let Django know which bucket we communicate with.
 
     ```
     if 'USE_AWS' in os.environ:
@@ -537,7 +535,7 @@ Used GitHub Repository to deploy our project on Heroku..
 
 18. Go to Heroku and add these keys to Congig Vars and USE_AWS set to True.
 
-19. Create a custum_storages.py file for settings for media and static .
+19. Create a custum_storages.py file for settings for media and static.
 
     ```
     class StaticStorage(S3Boto3Storage):
@@ -625,7 +623,7 @@ Used GitHub Repository to deploy our project on Heroku..
 
 -   Images mainly came from [Pexels](https://www.pexels.com/)
 
--   [Bootstrap4](https://getbootstrap.com/docs/4.4/getting-started/introduction/): Bootstrap Library used throughout the project mainly to make site responsive using the Bootstrap Grid System.
+-   [Bootstrap4](https://getbootstrap.com/docs/4.4/getting-started/introduction/): Bootstrap Library used throughout the project mainly to make the site responsive using the Bootstrap Grid System.
 
 -   Used code from the lessons with Code Institute.
 
