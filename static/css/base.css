@@ -380,8 +380,47 @@ body > div.message-container > div > div.toast-body > div:nth-child(4) > div > p
 
 @media (max-width: 281px){
 .white-h1 {
-    font-size: 1.5rem;
-    margin-top: 40px;
+    font-size: 1rem;
+   
 }
 .logo-font{
         font-size:1rem;}}
+@media (max-height: 820px)and (max-width: 600px) {
+    .white-h1{
+        font-size: 1.5rem;}
+    .white-h3{
+        font-size: 1.5rem;}
+        
+    .top-hr{margin-top: 50px;}
+}
+
+@media (max-width: 350px){
+.white-h1 {
+    font-size: 1.5rem;}
+    }
+
+@media (max-width: 600px) {
+    .white-h1{
+        font-size: 1.5rem;}
+    .top-hr{margin-top: 50px;}
+    }
+
+@media (max-width: 798px){
+.white-h1 {
+    font-size: 1.5rem;}
+    }
+@media (max-width: 350px){
+.white-h1 {
+    font-size: 1.5rem;}
+    }
+    
+@media (max-width: 600px){
+.white-h1 {
+    font-size: 1.5rem;
+}}
+
+ @media (max-width: 650px){
+ .logo-font{font-size: 1rem;}
+ .white-h1 {
+    font-size: 1.5rem;
+}}

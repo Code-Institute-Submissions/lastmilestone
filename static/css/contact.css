@@ -246,13 +246,9 @@ input:-webkit-autofill, input:focus:-webkit-autofill {
 	font-weight: 600;
 
  }
- @media (max-width: 650px){
- .logo-font{font-size: 1rem;}}
-
-@media (max-width: 281px){
-.white-h1 {
+@media (max-width: 650px){
+    .white-h1 {
     font-size: 1.5rem;
-    margin-top: 40px;
-}
-.logo-font{
-        font-size:1rem;}}
+}}
+
+

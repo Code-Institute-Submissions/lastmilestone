@@ -225,9 +225,6 @@
 .logo-font{
 	font-size: 1rem;}
 
-.white-h1{
-	font-size: 1.5rem;}
-    
 .classtime-table{
     overflow-x: auto;
 }
@@ -243,12 +240,6 @@
 
 @media (max-width: 350px){
 
-.logo-font{
-	font-size: 1rem;}
-
-.white-h1{
-	font-size: 1.5rem;}
-
 .timetable-controls ul li:after {
     visibility: hidden;}
 
@@ -258,7 +249,5 @@
 }
 .timetable-controls {
     font-size: .5rem;
-    text-align: center;
-   
-}
+    text-align: center;}
 }
