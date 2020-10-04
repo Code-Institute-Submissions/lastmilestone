@@ -11,7 +11,7 @@
     color: #ffffff;
     text-transform: uppercase;
     margin-bottom: 14px;
-    -webkit-font-smoothing: antialiased;
+    
 }
 
 .white-h2 {
@@ -20,7 +20,7 @@
         color: #ffffff;
         text-transform: uppercase;
         margin-bottom: 14px;
-        -webkit-font-smoothing: antialiased;
+        
     
 }
 
@@ -30,7 +30,7 @@
     color: #ffffff;
     text-transform: uppercase;
     margin-bottom: 14px;
-   -webkit-font-smoothing: antialiased;
+   
 }
 
 
@@ -58,9 +58,7 @@
     background: #e4381C;
     content: "";
     opacity: 0;
-    -webkit-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
+   
 }
 /*  Carousel  */
 

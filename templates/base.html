@@ -32,9 +32,9 @@
         <!-- Stripe -->
         <script src="https://js.stripe.com/v3/"></script>
         <!--Email Script-->
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
         
-        <script type="text/javascript">
+        <script>
             (function(){
                 emailjs.init("user_TJuSJ1DCV2RtGzT7VrKgN");
             })();
@@ -44,7 +44,7 @@
     {% block extra_js %}
 
     <!-- Javascript to add active class -->
-    <script type="text/javascript">
+    <script>
 
         $(document).ready(function() {
 	        // get current URL path and assign 'active' class
@@ -117,7 +117,7 @@
     {% endblock %}
 
     {% block postloadjs %}
-    <script type="text/javascript">
+    <script>
         $('.toast').toast('show');
     </script>
    
