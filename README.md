@@ -1,6 +1,6 @@
 <h1 align="center">Robbie's <strong>GYM</strong> Website</h1> 
 
-View the live project here.
+[View the live project here.](https://robbiesgym.herokuapp.com/)
 
 ​	This website a milestone project for Code Institute.  The project's purpose is to create a website that allows users or  	an admin to store and manipulate data records.
 
@@ -70,7 +70,7 @@ View the live project here.
 *   ### Wireframes
 
     -   PC wireframes - mock-up [View](https://github.com/robibrutoczki/lastmilestone/tree/lastmilestone/Documentation/PCwireframes)
-
+-   Tablet wireframes - mock-up [View](https://github.com/robibrutoczki/lastmilestone/tree/lastmilestone/Documentation/TABLETwireframes)
     -   Mobile wireframes - mock-up [View](https://github.com/robibrutoczki/lastmilestone/tree/lastmilestone/Documentation/MOBILEwireframes)
 
 
@@ -144,7 +144,7 @@ Bootstrap 4:
 
 - ​	EmailJS was used to send emails from Contact page.
 
-Stripe](https://stripe.com/en-gb): 
+[Stripe](https://stripe.com): 
 
 - ​	STRIPE was used to make test card payments.
 
@@ -271,17 +271,18 @@ Validation results
   3. As an **Admin User,**  I want to to be able to add, edit, and delete trainers.
   
      1. Admin has a full CRUD functionality for trainers. Go to my account then choose Trainer Management .
-    
+       
         Then on Add Trainer Admin can add trainer, after adding a trainer, a Trainer details page comes up where Admin can edit or delete trainer.
-    
+       
      2. Admin can choose a trainer from the About us page, click on the picture or edit button to go the Edit Trainer page. If Admin wants to delete a trainer, click on the trainer's picture then on the Trainer page click on the delete button next to the trainer's picture.
-    
+       
         4. As an **Admin User,** I want to be able to add, edit, and delete users if needed.
-    
+       
        1. Admin has to go to the admin panel (https://robbiesgym.herokuapp.com/admin/auth/user/) ,after log in, Admin able to delete users.
-    
-            5. As an **Admin User,** I want to see users previous purchases.
-    
+            
+            
+        5. As an **Admin User,** I want to see users previous purchases.
+         
        1. Admin have to go to the admin panel (https://robbiesgym.herokuapp.com/admin/checkout/order/), after log in, Admin able to see user's orders.
 
 
@@ -317,32 +318,6 @@ Tested Authentication and Note  [pdf](https://github.com/robibrutoczki/lastmiles
 -   When popup "toast" messages closed, sometimes a white dot left in the top,right corner of the screen.  
 
 ## Deployment
-
-### GitHub
-
-The project was pushed to GitHub using the following steps...
-
-1. ```
-    git init
-    ```
-
-    
-
-2. ```
-    git add .
-    ```
-
-    
-
-3. ```
-    git commit -m "Some comment"
-    ```
-
-    
-
-4. ```
-    git push
-    ```
 
 **HEROKU **
 
