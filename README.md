@@ -148,11 +148,14 @@ Bootstrap 4:
 
 - ​	STRIPE was used to make test card payments.
 
-  
 
 [AWS S3](https://s3.console.aws.amazon.com/s3): 
 
-- ​	S3 was used to store static and media files.
+- S3 was used to store static and media files.
+
+[Grammarly.com](https://app.grammarly.com): 
+
+- ​	Grammarly.com was used to fix grammar mistakes and typos.
 
   
 
@@ -279,8 +282,7 @@ Validation results
         4. As an **Admin User,** I want to be able to add, edit, and delete users if needed.
        
        1. Admin has to go to the admin panel (https://robbiesgym.herokuapp.com/admin/auth/user/) ,after log in, Admin able to delete users.
-            
-            
+          
         5. As an **Admin User,** I want to see users previous purchases.
          
        1. Admin have to go to the admin panel (https://robbiesgym.herokuapp.com/admin/checkout/order/), after log in, Admin able to see user's orders.
@@ -290,11 +292,21 @@ Validation results
 
 ### Further Testing
 
--   The Website was tested on Google Chrome, Internet Explorer, Microsoft Edge, and Safari browsers.
--   The website was viewed on a variety of devices such as Desktop, Laptop, iPhone7, iPhone 8 & iPhoneX .
--   A large amount of testing was done to ensure that all pages were linking correctly.
--   Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
--   We tested every page on [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) for CSS and [Nu HTML checker](https://validator.w3.org/) for HTML . All test came out valid and without errors. The results are here: [CSS](https://github.com/robibrutoczki/lastmilestone/tree/lastmilestone/Documentation/CSSvalid) and [HTML](https://github.com/robibrutoczki/lastmilestone/blob/lastmilestone/Documentation/CSSvalid/Checkout.png) .
+- The Website was tested on Google Chrome, Internet Explorer, Microsoft Edge, and Safari browsers.
+
+- The website was viewed on a variety of devices such as Desktop, Laptop, iPhone7, iPhone 8 & iPhoneX .
+
+- A large amount of testing was done to ensure that all pages were linking correctly.
+
+- Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
+
+- We tested every page on [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) for CSS and [Nu HTML checker](https://validator.w3.org/) for HTML . All test came out valid and without errors. The results are here: [CSS](https://github.com/robibrutoczki/lastmilestone/tree/lastmilestone/Documentation/CSSvalid) and [HTML](https://github.com/robibrutoczki/lastmilestone/blob/lastmilestone/Documentation/CSSvalid/Checkout.png).
+
+- **NOTE :** Emails work fully through the authentication process, and to send messages from the Contact page.
+
+  However, if a User paying for a product, won't get the confirmation email from Stripe. **In test mode Stripe sending all the messages to my email address.** It is possible to send confirmation email manually from Stripe's dashboard.
+
+  
 
 Tested Authentication and Note  [pdf](https://github.com/robibrutoczki/lastmilestone/blob/lastmilestone/Documentation/Signinpictures/Signinprocess.pdf)
 
